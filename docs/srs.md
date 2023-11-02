@@ -1,5 +1,4 @@
-# Softwareanforderungsspezifikation (SRS) für das Projekt Daily Quotes
-
+# Softwareanforderungsspezifikation (SRS) für das Projekt Daily Quotes 
 **Projektname:**
 
 Der Name unseres Projekts lautet „Daily Quotes"
@@ -269,3 +268,11 @@ _Bemerkung: User-Stories beschreiben bei uns eher die funktionalen Anforderungen
 ## 4. Technische Einschränkungen
 
 Der Servetyp, der der Einfachheit verwendet wird, ist [Firebase](https://firebase.google.com/). Dies ist ein Datenbankenservice von Google, der in [NoSQL](https://en.wikipedia.org/wiki/NoSQL) strukturiert ist. Die Datenbankzugriffe und -modifikationen werden vom Nutzer aus gemacht und vom Server lediglich [validiert](https://firebase.google.com/docs/firestore/security/get-started), ohne dass tatsächliche Berechnungen auf dem Server stattfinden.
+
+## 5. Aktivitätsdiagramme
+
+![Aktivitätsdiagramm1](./diagramme/Aktivitätsdiagramm1.png)
+
+![Aktivitätsdiagramm2](./diagramme/Aktivitätsdiagramm2.png)
+
+![Aktivitätsdiagramm3](./diagramme/Aktivitätsdiagramm3.png)

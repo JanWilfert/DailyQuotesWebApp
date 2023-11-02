@@ -1,4 +1,4 @@
-# DailyQuotes (Android)
+# DailyQuotes (Android) 
 ## Softwareanforderungen
 <!--
 > Bei dieser Vorlage handelt es sich um eine vereinfachte Version, die auf den Dokumentationsvorlagen von IBM Rational Unified Process (RUP) basiert.
