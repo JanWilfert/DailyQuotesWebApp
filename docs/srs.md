@@ -40,8 +40,6 @@ Das Dokument behandelt die funktionalen und nichtfunktionalen Anforderungen für
 _Bislang keine vorhanden_
 
 ### 1.4 Referenzen
-
-- [GitHub Repository (einschließlich der wöchentlichen Einträge/ Updates)](https://github.com/JanWilfert/DailyQuotesWebApp)
 - [Jira](https://daily-quotes.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog)
 
 ## 2. Funktionale Anforderungen**
@@ -54,7 +52,6 @@ _Bislang keine vorhanden_
 - <u>Benutzer-Authentifizierung:</u> Ein System zur Benutzeranmeldung und -abmeldung, um die Sicherheit und Personalisierung zu gewährleisten.
 - <u>Zitat-Archiv:</u> Nutzer können in einem Archiv stöbern, um frühere Zitate zu finden und anzusehen.
 
-[_Design von allen Elementen siehe Mock-Up_](https://github.com/JanWilfert/DailyQuotesWebApp/blob/main/assets/designs/Startpage.png) )
 
 ### 2.1 Übersicht
 
@@ -64,7 +61,8 @@ _Bislang keine vorhanden_
 - Der User soll sein Passwort zurücksetzen können, damit sein Account nicht verloren geht, wenn er sein Passwort vergisst.
 - Der User soll Zitate mit anderen Nutzern teilen können, damit ein Austausch stattfindet
 - Der User soll Freunde hinzufügen können, damit er Zitate leichter und schneller mit diesen teilen kann
-- Der User soll ein Profilbild hinzufügen können, damit seine Freunde ihn besser erkennen. 
+- Der User soll ein Profilbild hinzufügen können, damit seine Freunde ihn besser erkennen.
+
 ![UseCaseDiagram](./img/UseCaseDia.png)
 
 **UI-Mockup:**
@@ -119,6 +117,10 @@ _Bislang keine vorhanden_
 **Relevante User Stories:**
 
 - Der User soll Zitate mit anderen Nutzern teilen können, damit ein Austausch stattfindet.
+   
+**UI-Mockup:**
+
+![Register](./img/QuoteOfTheDay.png)
 
 **Voraussetzung:**
 
@@ -189,6 +191,10 @@ Nachbedingung:
 **Relevante User Stories:**
 
 - Der User soll Freunde hinzufügen können, damit er Zitate leichter und schneller mit diesen teilen kann
+
+**UI-Mockup:**
+
+![Register](./img/Profile.png)
 
 **Voraussetzung:**
 
@@ -276,3 +282,6 @@ Der Servetyp, der der Einfachheit verwendet wird, ist [Firebase](https://firebas
 ![Aktivitätsdiagramm2](./diagramme/Aktivitätsdiagramm2.png)
 
 ![Aktivitätsdiagramm3](./diagramme/Aktivitätsdiagramm3.png)
+
+## 6. Sequenzdiagramme
+![Sequenzdiagramm](./diagramme/SequenzdiagrammDailyQuotes.png)
