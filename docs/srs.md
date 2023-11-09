@@ -63,7 +63,7 @@ _Bislang keine vorhanden_
 - Der User soll Freunde hinzufügen können, damit er Zitate leichter und schneller mit diesen teilen kann
 - Der User soll ein Profilbild hinzufügen können, damit seine Freunde ihn besser erkennen.
 
-![UseCaseDiagram](./img/UseCaseDia.png)
+![UseCaseDiagram](./diagramme/AnwendungsfalldiagrammDailyQuotes.png)
 
 **UI-Mockup:**
 
