@@ -19,7 +19,7 @@ Verwaltung der Freunde eines Nutzer
 
 **Kollaborateuere:**
 
--[Benutzer](#klasse-benutzer)
+- [Benutzer](#klasse-benutzer)
 
 ## Klasse Zitat
 
@@ -29,7 +29,7 @@ repräsentiert ein einzelnes Zitat
 
 **Kollaborateuere:**
 
--keine
+- keine
 
 ## Klasse gespeicherteZitate
 
@@ -49,7 +49,7 @@ Verwaltung aller Zitate
 
 **Kollaborateure**
 
--[Zitat](#klasse-zitat)
+- [Zitat](#klasse-zitat)
 
 ## Klasse Benutzer-Einstellungen
 
@@ -69,5 +69,5 @@ Verwaltung aller registrierten Benutzer
 
 **Kollaborateure**
 
--[Benutzer](#klasse-benutzer)
+- [Benutzer](#klasse-benutzer)
 
