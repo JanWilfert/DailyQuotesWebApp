@@ -4,7 +4,7 @@
 
 **Verantwortlichkeit:**
 
--Verwaltung persönlicher Informationen des Benutzers.
+Verwaltung persönlicher Informationen des Benutzers.
 
 **Kollaborateure:**
 - [Freundesliste](#klasse-freundesliste)
@@ -15,25 +15,27 @@
 
 **Verantwortlichkeit:**
 
--Verwaltung der Freunde eines Nutzer
+Verwaltung der Freunde eines Nutzer
 
 **Kollaborateuere:**
+
 -[Benutzer](#klasse-benutzer)
 
 ## Klasse Zitat
 
 **Verantwortlichkeit**
 
--repräsentiert ein einzelnes Zitat
+repräsentiert ein einzelnes Zitat
 
 **Kollaborateuere:**
+
 -keine
 
 ## Klasse gespeicherteZitate
 
 **Verantwortlichkeit**
 
--Verwaltung der vom Benutzer gespeicherten Zitate
+Verwaltung der vom Benutzer gespeicherten Zitate
 
 **Kollaborateure**
 
@@ -43,7 +45,7 @@
 
 **Verantwortlichkeit:**
 
--Verwaltung aller Zitate
+Verwaltung aller Zitate
 
 **Kollaborateure**
 
@@ -53,16 +55,17 @@
 
 **Verantwortlichkeit**
 
--Verwaltung der Einstellungen
+Verwaltung der Einstellungen
 
 **Kollaborateuere**
+
 - keine
 
 ## Klasse Benutzerverwaltung
 
 **Verantwortlichkeit**
 
--Verwaltung aller registrierten Benutzer
+Verwaltung aller registrierten Benutzer
 
 **Kollaborateure**
 
