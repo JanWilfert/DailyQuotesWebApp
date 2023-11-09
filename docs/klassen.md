@@ -29,7 +29,7 @@ repräsentiert ein einzelnes Zitat
 
 **Kollaborateuere:**
 
-- keine
+ - keine
 
 ## Klasse gespeicherteZitate
 
