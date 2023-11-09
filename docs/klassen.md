@@ -6,99 +6,36 @@
 - Verwaltung persönlicher Informationen des Benutzers.
 
 **Kollaborateure:**
-- [SpeicherBenutzer](#klasse-benutzerkontospeicher)
+- 
 
-## Klasse Benutzerauthentifizierung
-
-**Verantwortlichkeit:**
-- Bearbeitung von Benutzerauthentifizierung und Sitzungsverwaltung.
-
-**Kollaborateure:**
-- [SpeicherBenutzer](#klasse-benutzerkontospeicher)
-
-## Klasse ZitatDarstellung
+## Klasse Freundesliste
 
 **Verantwortlichkeit:**
-- Darstellung eines einzelnen Zitats mit den zugehörigen Daten.
+-Verwaltung der Freunde eines Nutzer
 
-**Kollaborateure:**
-- Keine
+**Kollaborateuere:**
+-[Benutzer](#klasse-benutzer)
 
-## Klasse SpeicherZitat
+## Klasse Zitate
 
-**Verantwortlichkeit:**
-- Verwaltung der Speicherung und des Abrufs von Zitaten aus einem persistenten Speicher.
+**Verantwortlichkeit**
+-repräsentiert ein einzelnes Zitat
 
-**Kollaborateure:**
-- [ZitatDarstellung](#klasse-zitatdarstellung)
+**Kollaborateuere:**
+-keine
 
-## Klasse ZwischenspeicherZitat
+## Klasse gespeicherteZitate
 
-**Verantwortlichkeit:**
-- Pflege eines lokalen Zwischenspeichers von Zitaten.
+**Verantwortlichkeit**
+-Verwaltung der vom Benutzer gespeicherten Zitate
 
-**Kollaborateure:**
-- [ZitatDarstellung](#klasse-zitatdarstellung)
-- [SpeicherZitat](#klasse-zitatspeicher)
+**Kollaborateure**
+- [Zitat](#klasse-zitat)
 
-## Klasse SpeicherBenutzer
+## Klasse Benutzer-Einstellungen
 
-**Verantwortlichkeit:**
-- Interaktion mit dem Speichermechanismus für Benutzerkonten.
+**Verantwortlichkeit**
+-Verwaltung der Einstellungen
 
-**Kollaborateure:**
-- [Benutzer](#klasse-benutzerkonto)
-
-
-## Klasse ZitatAnzeige
-
-**Verantwortlichkeit:**
-- Anzeigen eines einzelnen Zitats in der Benutzeroberfläche.
-
-**Kollaborateure:**
-- [ZitatDarstellung](#klasse-zitatdarstellung)
-
-## Klasse Benutzereinstellungen
-
-**Verantwortlichkeit:**
-- Speichern und Verwalten von Benutzereinstellungen.
-
-**Kollaborateure:**
-- [Benutzer](#klasse-benutzerkonto)
-
-
-## Klasse Netzwerkkommunikation
-
-**Verantwortlichkeit:**
-- Abwicklung aller Netzwerkkommunikation.
-
-**Kollaborateure:**
-- [SpeicherZitat](#klasse-zitatspeicher)
-- [SpeicherBenutzer](#klasse-benutzerkontospeicher)
-
-## Klasse Benutzersitzung
-
-**Verantwortlichkeit:**
-- Verwaltung des Zustands der aktuellen Benutzersitzung.
-
-**Kollaborateure:**
-- [Benutzerauthentifizierung](#klasse-benutzerauthentifizierung)
-- [Benutzer](#klasse-benutzerkonto)
-
-
-## Klasse ZitatInteraktion
-
-**Verantwortlichkeit:**
-- Bearbeitung der Interaktion des Benutzers mit einem Zitat (wie Teilen, Speichern).
-
-**Kollaborateure:**
-- [ZitatDarstellung](#klasse-zitatdarstellung)
-- [Benutzereinstellungen](#klasse-benutzereinstellungen)
-
-## Klasse Benutzerfreundesliste
-
-**Verantwortlichkeit:**
-- Verwaltung der Freundesliste des Benutzers.
-
-**Kollaborateure:**
-- [Benutzer](#klasse-benutzerkonto)
+**Kollaborateuere**
+- [Benutzer](#klasse-benutzer)
