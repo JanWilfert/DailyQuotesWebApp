@@ -6,7 +6,7 @@
 - Verwaltung persönlicher Informationen des Benutzers.
 
 **Kollaborateure:**
-- [BenutzerkontoSpeicher](#klasse-benutzerkontospeicher)
+- [SpeicherBenutzer](#klasse-benutzerkontospeicher)
 
 ## Klasse Benutzerauthentifizierung
 
@@ -14,7 +14,7 @@
 - Bearbeitung von Benutzerauthentifizierung und Sitzungsverwaltung.
 
 **Kollaborateure:**
-- [BenutzerkontoSpeicher](#klasse-benutzerkontospeicher)
+- [SpeicherBenutzer](#klasse-benutzerkontospeicher)
 
 ## Klasse ZitatDarstellung
 
@@ -39,7 +39,7 @@
 
 **Kollaborateure:**
 - [ZitatDarstellung](#klasse-zitatdarstellung)
-- [ZitatSpeicher](#klasse-zitatspeicher)
+- [SpeicherZitat](#klasse-zitatspeicher)
 
 ## Klasse SpeicherBenutzer
 
@@ -47,7 +47,7 @@
 - Interaktion mit dem Speichermechanismus für Benutzerkonten.
 
 **Kollaborateure:**
-- [Benutzerkonto](#klasse-benutzerkonto)
+- [Benutzer](#klasse-benutzerkonto)
 
 
 ## Klasse ZitatAnzeige
@@ -64,7 +64,7 @@
 - Speichern und Verwalten von Benutzereinstellungen.
 
 **Kollaborateure:**
-- [Benutzerkonto](#klasse-benutzerkonto)
+- [Benutzer](#klasse-benutzerkonto)
 
 
 ## Klasse Netzwerkkommunikation
@@ -73,8 +73,8 @@
 - Abwicklung aller Netzwerkkommunikation.
 
 **Kollaborateure:**
-- [ZitatSpeicher](#klasse-zitatspeicher)
-- [BenutzerkontoSpeicher](#klasse-benutzerkontospeicher)
+- [SpeicherZitat](#klasse-zitatspeicher)
+- [SpeicherBenutzer](#klasse-benutzerkontospeicher)
 
 ## Klasse Benutzersitzung
 
@@ -83,7 +83,7 @@
 
 **Kollaborateure:**
 - [Benutzerauthentifizierung](#klasse-benutzerauthentifizierung)
-- [Benutzerkonto](#klasse-benutzerkonto)
+- [Benutzer](#klasse-benutzerkonto)
 
 
 ## Klasse ZitatInteraktion
@@ -101,4 +101,4 @@
 - Verwaltung der Freundesliste des Benutzers.
 
 **Kollaborateure:**
-- [Benutzerkonto](#klasse-benutzerkonto)
+- [Benutzer](#klasse-benutzerkonto)
