@@ -1,6 +1,6 @@
 # CRC-Karten
 
-## Klasse Benutzerkonto
+## Klasse Benutzer
 
 **Verantwortlichkeit:**
 - Verwaltung persönlicher Informationen des Benutzers.
@@ -24,7 +24,7 @@
 **Kollaborateure:**
 - Keine
 
-## Klasse ZitatSpeicher
+## Klasse SpeicherZitat
 
 **Verantwortlichkeit:**
 - Verwaltung der Speicherung und des Abrufs von Zitaten aus einem persistenten Speicher.
@@ -32,7 +32,7 @@
 **Kollaborateure:**
 - [ZitatDarstellung](#klasse-zitatdarstellung)
 
-## Klasse ZitatZwischenspeicher
+## Klasse ZwischenspeicherZitat
 
 **Verantwortlichkeit:**
 - Pflege eines lokalen Zwischenspeichers von Zitaten.
@@ -41,7 +41,7 @@
 - [ZitatDarstellung](#klasse-zitatdarstellung)
 - [ZitatSpeicher](#klasse-zitatspeicher)
 
-## Klasse BenutzerkontoSpeicher
+## Klasse SpeicherBenutzer
 
 **Verantwortlichkeit:**
 - Interaktion mit dem Speichermechanismus für Benutzerkonten.
