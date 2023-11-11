@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Quotes Webapp</title>
+    <link rel="stylesheet" href="DailyQuotesStyle.css">
+</head>
+
+<body>
+    <div id="app" >
+        <header>
+            <div class="logo">
+                <img v-on:click="currentComponent='mainPage'" src="DailyQuotes_Logo.png">
+            </div>
+            <div class="profile" >
+                <img v-on:click="toggleDropDown" src="defaultUserIcon.webp">
+                <div id="dropDownMenu" v-if="showDropDown">
+                    <a v-on:click="currentComponent = 'profile'">Profile</a>
+                    <a v-on:click="currentComponent = 'friends'">Friends</a>
+                    <a v-on:click="currentComponent = 'settings'">Settings</a>
+                    <a v-on:click="currentComponent = 'signOut'">Sign out</a>
+                </div>
+            </div>
+        </header>
+
+        <component :is="currentComponent"></component>
+    </div>
+
+    <!--Template für MainPage-->
+    <script type="text/x-template" id="mainPage-template">
+        <div id="quoteOfTheDay" class="quoteBox">
+            <h1>Quote of the Day!</h1>
+            <div id="quoteOfTheDay" class="quote">
+                <div id="quoteText">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                    takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+                <div id="quoteAuthor">
+                    ~Max Mustermann
+                </div>
+            </div>
+            <div id="quoteOfTheDayButtons" class="quoteButtons">
+                <button>Share</button>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="lastQuotes" class="quoteBox">
+            <h1>Last Quotes</h1>
+            <div id="lastQuote1" class="quote">
+                <div id="lastQuote1Text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                    takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+                <div id="lastQuote1Author" class="author">
+                    ~Max Mustermann
+                </div>
+            </div>
+            <div id="lastQuote2" class="quote">
+                <div id="lastQuote2Text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                    takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+                <div id="lastQuote2Author" class="author">
+                    ~Max Mustermann
+                </div>
+            </div> 
+            <div id="lastQuotesButton" class="quoteButtons">
+                <button>View All</button>
+            </div>
+        </div>
+    </script>
+
+    <!--Template für Profil-->
+    <script type="text/x-template" id="profile-template">
+        <h1>Das ist dein Profil</h1>
+    </script>
+
+    <!--Template für Friends-->
+    <script type="text/x-template" id="friends-template">
+        <h1>Du hast keine Freunde</h1>
+    </script>
+
+    <!--Template für Settings-->
+    <script type="text/x-template" id="settings-template">
+        <h1>Das sind deine Einstellungen</h1>
+    </script>
+
+    <!--Template für Sign out-->
+    <script type="text/x-template" id="signOut-template">
+        <h1>Ausgeloggt</h1>
+    </script>
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script src="DailyQuotes.js"></script>
+</body>
+
+</html>
