@@ -116,4 +116,23 @@ button:hover{
     font-size: 10px;
 }
 
+#pictureUpload{
+    display: none;
+}
 
+#profilePicture{
+    background-color: #f1efe4;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#pictureUploadLabel{
+    margin-right: 10px;
+}
+
+#settingsHeading{
+    text-align: center;
+}

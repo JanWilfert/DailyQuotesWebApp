@@ -1,49 +1,63 @@
+const MainPageComponent = {
+    template: '#mainPageTemplate'
+};
 
-        const MainPageComponent = {
-            template: '#mainPage-template'
-        };
+const ProfileComponent = {
+    template: '#profileTemplate'
+};
 
-        const ProfileComponent = {
-            template: '#profile-template'
-        };
+const FriendsComponent = {
+    template: '#friendsTemplate'
+};
 
-        const FriendsComponent = {
-            template: '#friends-template'
-        };
-
-        const SettingsComponent = {
-            template: '#settings-template'
-        };
-
-        const SignOutComponent = {
-            template: '#signOut-template'
-        };
-
-        let app = Vue.createApp({
-            data() {
-                return {
-                    currentComponent: "mainPage",
-                    showDropDown: false
-                };
-            },
-            methods:{
-                toggleDropDown(){
-                    this.showDropDown = !this.showDropDown;
-                }/*,
-                closeDropDown(){
-                    if(this.showDropDown){
-                        this.showDropDown = false;
-                    }
-                }*/
-            },
-            components: {
-                "mainPage": MainPageComponent,
-                "profile" : ProfileComponent,
-                "friends": FriendsComponent,
-                "settings": SettingsComponent,
-                "signOut": SignOutComponent
+const SettingsComponent = {
+    template: '#settingsTemplate',
+    methods:{
+        clickButton(){
+            this.$refs.pictureUpload.click();
+        },
+        changeProfilPic(event){
+            const file = event.target.files[0]; //Repräsentiert erste ausgewählte Datei mit [0], 
+                                                //da es immer als Liste übergeben wird (auch wenns nur ein ist)
+            if (file){
+                this.$root.imgSrc = URL.createObjectURL(file); //Erstellt URL dazu, um Img im Browser anzuzeigen
             }
-        });
+        }
+        
+    }
+};
+
+const SignOutComponent = {
+    template: '#signOutTemplate'
+};
+
+let app = Vue.createApp({
+    data() {
+        return {
+            currentComponent: "mainPage",
+            showDropDown: false,
+            imgSrc: "defaultUserIcon.webp"
+        };
+    },
+    methods:{
+        toggleDropDown(){
+            this.showDropDown = !this.showDropDown;
+        }
+       /*,
+        closeDropDown(){
+            if(this.showDropDown){
+                this.showDropDown = false;
+            }
+        }*/
+    },
+    components: {
+        "mainPage": MainPageComponent,
+        "profile" : ProfileComponent,
+        "friends": FriendsComponent,
+        "settings": SettingsComponent,
+        "signOut": SignOutComponent
+    }
+});
 
 
-        app.mount("#app"); 
+app.mount("#app"); 

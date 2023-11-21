@@ -14,7 +14,7 @@
                 <img v-on:click="currentComponent='mainPage'" src="DailyQuotes_Logo.png">
             </div>
             <div class="profile" >
-                <img v-on:click="toggleDropDown" src="defaultUserIcon.webp">
+                <img v-on:click="toggleDropDown" :src="imgSrc">
                 <div id="dropDownMenu" v-if="showDropDown">
                     <a v-on:click="currentComponent = 'profile'">Profile</a>
                     <a v-on:click="currentComponent = 'friends'">Friends</a>
@@ -28,7 +28,7 @@
     </div>
 
     <!--Template für MainPage-->
-    <script type="text/x-template" id="mainPage-template">
+    <script type="text/x-template" id="mainPageTemplate">
         <div id="quoteOfTheDay" class="quoteBox">
             <h1>Quote of the Day!</h1>
             <div id="quoteOfTheDay" class="quote">
@@ -85,22 +85,31 @@
     </script>
 
     <!--Template für Profil-->
-    <script type="text/x-template" id="profile-template">
+    <script type="text/x-template" id="profileTemplate">
         <h1>Das ist dein Profil</h1>
     </script>
 
     <!--Template für Friends-->
-    <script type="text/x-template" id="friends-template">
+    <script type="text/x-template" id="friendsTemplate">
         <h1>Du hast keine Freunde</h1>
     </script>
 
     <!--Template für Settings-->
-    <script type="text/x-template" id="settings-template">
-        <h1>Das sind deine Einstellungen</h1>
+    <script type="text/x-template" id="settingsTemplate">
+        <h1 id="settingsHeading">Einstellungen</h1>
+        <div id="profilePicture">
+            <h2>Ändere dein Profilbild</h2>
+            <form method="post">
+                <label id="pictureUploadLabel">Wählen Sie ein Bild von ihrem PC aus.</label>
+                <input id="pictureUpload" type="file" accept=".jpg, .png" ref="pictureUpload" v-on:change="changeProfilPic">
+                <button v-on:click="clickButton" type="button">Ändern</button>
+            </form>
+        </div>
+       
     </script>
 
     <!--Template für Sign out-->
-    <script type="text/x-template" id="signOut-template">
+    <script type="text/x-template" id="signOutTemplate">
         <h1>Ausgeloggt</h1>
     </script>
 
