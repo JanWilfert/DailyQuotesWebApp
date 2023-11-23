@@ -10,7 +10,7 @@ import { ref } from 'vue'
 
 const currentComponent =  ref ("mainPage")
 const showDropDown = ref (false)
-const imgSrcProfile = "./src/assets/defaultUserIcon.webp"
+const imgSrcProfile = ref ("./src/assets/defaultUserIcon.webp")
 const imgSrcLogo = "./src/assets/DailyQuotes_Logo.png"
 
 const components = {
@@ -24,6 +24,11 @@ const components = {
 function toggleDropDown (){
   showDropDown.value = !showDropDown.value;
 }
+
+function onClickChild(value){
+  imgSrcProfile.value = URL.createObjectURL(value); 
+}
+
 </script>
 
 <template>
@@ -42,7 +47,7 @@ function toggleDropDown (){
           </div>
       </div>
   </header>
-    <component :is="components[currentComponent]"></component>
+    <component :is="components[currentComponent]" @test="onClickChild"></component>
   </main>
 </template>
 
