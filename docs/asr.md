@@ -18,6 +18,9 @@
 
 - Antwortmaß: Verfügbarkeit von mindestens 99%
 
+#### Strategie:
+Regelmäßige Backup- und Wiederherstellungsverfahren: Implementierung regelmäßiger Backups der Webserver- und Datenbankdaten, um im Falle eines Ausfalls eine schnelle Wiederherstellung zu ermöglichen.
+
 ## Effizienz:
 
 **Performance bei der Anzeige von Zitaten (E1):**
@@ -33,6 +36,9 @@
 - Antwort: Schnelles Laden eines Zitates
 
 - Antwortmaß: Antwort/ Anzeigen eines Zitates in unter zwei Sekunden
+
+#### Strategie:
+Optimierung der Datenbankabfragen und des Datenbanksystems: Analyse und Optimierung der Abfragen an die Datenbank, um die Antwortzeiten zu verringern, insbesondere bei komplexen Datenanforderungen.
 
 ## Sicherheit:
 
