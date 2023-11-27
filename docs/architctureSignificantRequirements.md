@@ -29,16 +29,31 @@ Antwort: Schnelles Laden eines Zitates
 
 Antwortmaß: Antwort/ Anzeigen eines Zitates in unter zwei Sekunden
 
-**Benutzerbarkeit:**
+**Datensicherheit:**
 
-Quelle:
+Quelle: Externe Bedrohung (Hacker, bösartige Akteure)
 
-Auslöser:
+Auslöser: Versuche, auf sensible Benutzerdaten zuzugreifen
 
-Artefakte:
+Artefakte: Datenbank und Server der Webapp
 
-Umgebung:
+Umgebung: Standartbetrieb
 
-Antwort:
+Antwort: Die Webapp schützt effektiv vor unbefugtem Datenzugriff
 
-Antwortmaß:
+Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Spciherung sensibler Daten als Hashes mit Salt
+
+**Benutzerfreundlichkeit:**
+
+Quelle: Endbenutzer
+
+Auslöser: Zugriff auf die Webanwendung
+
+Artefakt: Benutzeroberfläche der Webapp
+
+Umgebung: Normalbetrieb
+
+Antwort: Die Benutzeroberfläche ist intuitiv und einfach zu navigieren. Nutzer brauchen müssen keine Anleitungen studieren, um die Webapp sinvoll zu verwenden.
+
+Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit
+
