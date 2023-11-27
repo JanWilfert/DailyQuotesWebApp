@@ -16,10 +16,10 @@
             <div class="profile" >
                 <img v-on:click="toggleDropDown" :src="imgSrc">
                 <div id="dropDownMenu" v-if="showDropDown">
-                    <a v-on:click="currentComponent = 'profile'">Profile</a>
-                    <a v-on:click="currentComponent = 'friends'">Friends</a>
-                    <a v-on:click="currentComponent = 'settings'">Settings</a>
-                    <a v-on:click="currentComponent = 'signOut'">Sign out</a>
+                    <a v-on:click="toggleDropDown(), currentComponent = 'profile'">Profile</a>
+                    <a v-on:click="toggleDropDown(), currentComponent = 'friends'">Friends</a>
+                    <a v-on:click="toggleDropDown(), currentComponent = 'settings'">Settings</a>
+                    <a v-on:click="toggleDropDown(), currentComponent = 'signOut'">Sign out</a>
                 </div>
             </div>
         </header>
