@@ -41,7 +41,7 @@ Umgebung: Standartbetrieb
 
 Antwort: Die Webapp schützt effektiv vor unbefugtem Datenzugriff
 
-Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Spciherung sensibler Daten als Hashes mit Salt
+Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Speicherung sensibler Daten als Hashes mit Salt; kein Verlust von Nutzerdaten
 
 **Benutzerfreundlichkeit:**
 
@@ -69,5 +69,5 @@ Umgebung: Normalbetrieb/ Wartungsbetrieb
 
 Antwort: Der Code ist klar strukturiert, gut dokumentiert und leicht verständlich
 
-Antwortmaß: Zeit für das Verständnis und die Behebung von Fehlern ist minimal
+Antwortmaß: Zeit für das Verständnis und die Behebung von Fehlern ist minimal; Entwickler kann innherlab von 1.30h gesamten Code nachvollziehen und warten
 
