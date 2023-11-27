@@ -57,3 +57,17 @@ Antwort: Die Benutzeroberfläche ist intuitiv und einfach zu navigieren. Nutzer 
 
 Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit
 
+**Code Wartbarkeit:**
+
+Quelle: Entwicklungsteam
+
+Auslöser: Notwendigkeit, Änderungen am Code vorzunehmen oder Fehler zu beheben
+
+Artefakt: Codebasis der Webapp
+
+Umgebung: Normalbetrieb/ Wartungsbetrieb
+
+Antwort: Der Code ist klar strukturiert, gut dokumentiert und leicht verständlich
+
+Antwortmaß: Zeit für das Verständnis und die Behebung von Fehlern ist minimal
+
