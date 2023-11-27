@@ -48,7 +48,7 @@
 
 - Antwort: Die Webapp schützt effektiv vor unbefugtem Datenzugriff
 
-- Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Speicherung sensibler Daten als Hashes mit Salt
+- Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Speicherung sensibler Daten als Hashes mit Salt; kein Verlust von Nutzerdaten
 
 ## Benutzbarkeit:
 
@@ -64,21 +64,5 @@
 
 - Antwort: Die Benutzeroberfläche ist intuitiv und einfach zu navigieren. Nutzer brauchen müssen keine Anleitungen studieren, um die Webapp sinvoll zu verwenden.
 
-- Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit
-
-## Wartbarkeit:
-
-**Erweiterbarkeit:**
-
-- Quelle: Entwicklungsteam
-
-- Auslöser: Notwendigkeit, Änderungen am Code vorzunehmen oder Fehler zu beheben
-
-- Artefakt: Codebasis der Webapp
-
-- Umgebung: Normalbetrieb/ Wartungsbetrieb
-
-- Antwort: Der Code ist klar strukturiert, gut dokumentiert und leicht verständlich
-
-- Antwortmaß: Zeit für das Verständnis und die Behebung von Fehlern ist minimal
+Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit
 
