@@ -4,7 +4,7 @@
 
 ## Zuverlässigkeit:
 
-**Verfügbarkeit:**
+**Verfügbarkeit (Z1):**
 
 - Quelle: Benutzer bzw. möglicherweise zukünftiger Benutzer
 
@@ -20,7 +20,7 @@
 
 ## Effizienz:
 
-**Performance bei der Anzeige von Zitaten:**
+**Performance bei der Anzeige von Zitaten (E1):**
 
 - Quelle: Benutzer bzw. möglicherweise zukünftiger Benutzer
 
@@ -36,7 +36,7 @@
 
 ## Sicherheit:
 
-**Datensicherheit:**
+**Datensicherheit (S1):**
 
 - Quelle: Externe Bedrohung (Hacker, bösartige Akteure)
 
@@ -52,7 +52,7 @@
 
 ## Benutzbarkeit:
 
-**Bedienbarkeit:**
+**Bedienbarkeit (B1):**
 
 - Quelle: Endbenutzer
 
@@ -68,7 +68,7 @@ Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebi
 
 ## Wartbarkeit:
 
-**Erweiterbarkeit:**
+**Erweiterbarkeit (W1):**
 
 - Quelle: Entwicklungsteam
 
