@@ -80,4 +80,18 @@ Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebi
 
 - Antwort: Der Code ist klar strukturiert, gut dokumentiert und leicht verständlich
 
-- Antwortmaß: Zeit für das Verständnis und die Behebung von Fehlern ist minimal
+- Antwortmaß: Verständnis des Codes innerhalb von 1.30h, sodass danach Erweiterungen eingefügt werden können; Code ist in einzelne Komponenten unterteilt, sodass Erweiterungen durch einfaches hinzufügen von neuen Komponenten schnell implementiert werden können
+
+
+## Qualitätsbaum
+
+| Qualitätsattribut | Spezifizierung | Szenarien Qualitätsattribut (wirtschaftlicher Wert, technisches Risiko) H: hoch M: medium N: niedrig |
+|----------|----------|----------|
+| Verfügbarkeit    | Verfügbarkeit der Webseite für Nutzer  | Anzeige der Webseite und eines täglichen Zitats; Verfügbarkeit von mindestens 99% (H, M)   |
+| Performance bei der Anzeige von Zitaten    | Schnelligkeit des Ladens der Zitate  | Antwort/ Anzeigen eines Zitates in unter zwei Sekunden   |
+| Datensicherheit (H, M)   | Schutz der Nutzerdaten vor Außenstehende   | Keine erfoglreichen Sicherheitsverletzungen; Speicherung sensibler Daten als Hashes mit Salt; überhaupt kein Verlust von Nutzerdaten   |
+| Bedienbarkeit    | Praktikable und einfache Handhabung   | Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit (H, N)  |
+| Erweiterbarkeit    | Hinzufügbarkeit von neuen Features und Einstellungen  | Verständnis des Codes innerhalb von 1.30h, sodass danach Erweiterungen eingefügt werden können; Code ist in einzelne Komponenten unterteilt, sodass Erweiterungen durch einfaches hinzufügen von neuen Komponenten schnell implementiert werden können (M, M)  |
+
+
+![Qualitästbaum](./img/qualitätsmerkmalBaum.png)
