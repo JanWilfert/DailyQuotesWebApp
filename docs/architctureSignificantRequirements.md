@@ -1,59 +1,84 @@
 # Architecture Significant Requirements (ASR)
 
 ## Qualitätsszenarien
+
+## Zuverlässigkeit:
+
 **Verfügbarkeit:**
 
-Quelle: Benutzer bzw. möglicherweise zukünftiger Benutzer
+- Quelle: Benutzer bzw. möglicherweise zukünftiger Benutzer
 
-Auslöser: Person, welche auf die Webseite zugreifen möchte
+- Auslöser: Person, welche auf die Webseite zugreifen möchte
 
-Artefakt: Webserver
+- Artefakt: Webserver
 
-Umgebung: Normalbetrieb
+- Umgebung: Normalbetrieb
 
-Antowrt: Anzeige der Webseite und eines täglichen Zitats
+- Antwort: Anzeige der Webseite und eines täglichen Zitats
 
-Antwortmaß: Verfügbarkeit von mindestens 99%
+- Antwortmaß: Verfügbarkeit von mindestens 99%
+
+## Effizienz:
 
 **Performance bei der Anzeige von Zitaten:**
 
-Quelle: Benutzer bzw. möglicherweise zukünftiger Benutzer
+- Quelle: Benutzer bzw. möglicherweise zukünftiger Benutzer
 
-Auslöser: Anforderung eines Zitates
+- Auslöser: Anforderung eines Zitates
 
-Artefakt: Datenbank
+- Artefakt: Datenbank
 
-Umgebung: Spitzenlast
+- Umgebung: Spitzenlast
 
-Antwort: Schnelles Laden eines Zitates
+- Antwort: Schnelles Laden eines Zitates
 
-Antwortmaß: Antwort/ Anzeigen eines Zitates in unter zwei Sekunden
+- Antwortmaß: Antwort/ Anzeigen eines Zitates in unter zwei Sekunden
+
+## Sicherheit:
 
 **Datensicherheit:**
 
-Quelle: Externe Bedrohung (Hacker, bösartige Akteure)
+- Quelle: Externe Bedrohung (Hacker, bösartige Akteure)
 
-Auslöser: Versuche, auf sensible Benutzerdaten zuzugreifen
+- Auslöser: Versuche, auf sensible Benutzerdaten zuzugreifen
 
-Artefakte: Datenbank und Server der Webapp
+- Artefakte: Datenbank und Server der Webapp
 
-Umgebung: Standartbetrieb
+- Umgebung: Standartbetrieb
 
-Antwort: Die Webapp schützt effektiv vor unbefugtem Datenzugriff
+- Antwort: Die Webapp schützt effektiv vor unbefugtem Datenzugriff
 
-Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Spciherung sensibler Daten als Hashes mit Salt
+- Antwortmaß: Keine erfoglreichen Sicherheitsverletzungen; Speicherung sensibler Daten als Hashes mit Salt
 
-**Benutzerfreundlichkeit:**
+## Benutzbarkeit:
 
-Quelle: Endbenutzer
+**Bedienbarkeit:**
 
-Auslöser: Zugriff auf die Webanwendung
+- Quelle: Endbenutzer
 
-Artefakt: Benutzeroberfläche der Webapp
+- Auslöser: Zugriff auf die Webanwendung
 
-Umgebung: Normalbetrieb
+- Artefakt: Benutzeroberfläche der Webapp
 
-Antwort: Die Benutzeroberfläche ist intuitiv und einfach zu navigieren. Nutzer brauchen müssen keine Anleitungen studieren, um die Webapp sinvoll zu verwenden.
+- Umgebung: Normalbetrieb
 
-Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit
+- Antwort: Die Benutzeroberfläche ist intuitiv und einfach zu navigieren. Nutzer brauchen müssen keine Anleitungen studieren, um die Webapp sinvoll zu verwenden.
+
+- Antwortmaß: Minimale Klicks (nicht mehr als 5) erforderlich, um zu jeder bliebigen Funktion zu gelangen; positive Rückmeldungen in Benutzerumfragen zur Benutzerfreundlichkeit
+
+## Wartbarkeit:
+
+**Erweiterbarkeit:**
+
+- Quelle: Entwicklungsteam
+
+- Auslöser: Notwendigkeit, Änderungen am Code vorzunehmen oder Fehler zu beheben
+
+- Artefakt: Codebasis der Webapp
+
+- Umgebung: Normalbetrieb/ Wartungsbetrieb
+
+- Antwort: Der Code ist klar strukturiert, gut dokumentiert und leicht verständlich
+
+- Antwortmaß: Zeit für das Verständnis und die Behebung von Fehlern ist minimal
 
