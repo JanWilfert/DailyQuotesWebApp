@@ -1,5 +1,5 @@
 //import './assets/main.css'
-import './assets/DailyQuotesStyle.css'
+import './assets/test.scss'
 
 import { createApp } from 'vue'
 import App from './App.vue'
