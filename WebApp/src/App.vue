@@ -40,10 +40,10 @@ function onClickChild(value){
       <div class="profile" >
           <img v-on:click="toggleDropDown" :src="imgSrcProfile">
           <div id="dropDownMenu" v-if="showDropDown">
-              <a v-on:click="currentComponent = 'profilePage'">Profile</a>
-              <a v-on:click="currentComponent = 'friendsPage'">Friends</a>
-              <a v-on:click="currentComponent = 'settingsPage'">Settings</a>
-              <a v-on:click="currentComponent = 'signOutPage'">Sign out</a>
+              <a v-on:click="toggleDropDown(), currentComponent = 'profilePage'">Profile</a>
+              <a v-on:click="toggleDropDown(), currentComponent = 'friendsPage'">Friends</a>
+              <a v-on:click="toggleDropDown(), currentComponent = 'settingsPage'">Settings</a>
+              <a v-on:click="toggleDropDown(), currentComponent = 'signOutPage'">Sign out</a>
           </div>
       </div>
   </header>
