@@ -11,8 +11,6 @@
         // Canvas in PNG umwandeln
         const image = canvas.toDataURL("image/png");
 
-        // Hier können Sie das PNG speichern oder teilen
-
         const link = document.createElement('a');
         link.href = image;
         link.download = 'exported-quote.png';
