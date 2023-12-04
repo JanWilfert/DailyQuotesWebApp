@@ -1,18 +1,30 @@
+//Colors of the Webapp
+$firstColor: #6e8b8d;
+$secondColor: #4f7073;
+$thirdColor: #2b4849;
+$fourthColor: #f1f1f1;
+$fithColor: #a1b6b6;
+
+//ButtonsColors
+$buttonColor: #6e8b8d;
+$buttonColorHover: #4f7073;
+
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #6e8b8d;
+    background-color: $firstColor;
 }
 
 header {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: $fourthColor;
     padding: 10px 20px;
-    background-color: #4f7073;
+    background-color: $secondColor;
 }
 
 .logo img, .profile img {
@@ -29,7 +41,7 @@ header {
 #dropDownMenu{
     position: absolute;
     /*background-color: #f1efe4;*/
-    background-color: #2b4849;
+    background-color: $thirdColor;
     border-radius: 8px;
     min-width: 150px;
     right: 0;
@@ -47,7 +59,7 @@ header {
 }
 
 #dropDownMenu a:hover{
-    background-color: #a1b6b6;
+    background-color: $fithColor;
     cursor: pointer;
 }
 
@@ -86,7 +98,7 @@ header {
 }
 
 button{
-    background-color: #6e8b8d;
+    background-color: $buttonColor;
     border-radius: 20px;
     border: none;
     padding-left: 20px;
@@ -98,7 +110,7 @@ button{
 }
 
 button:hover{
-    background-color: #4f7073;
+    background-color: $buttonColorHover;
 }
 
 .quoteButtons{
@@ -136,3 +148,33 @@ button:hover{
 #settingsHeading{
     text-align: center;
 }
+
+.userApplicationForm{
+    background-color: $fourthColor; 
+    width: 400px; 
+    margin: auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.userApplicationFormInput {
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 480px) {
+    .userApplicationForm {
+        width: 90%; 
+    }
+}
+
