@@ -117,19 +117,14 @@ Wichtige Schnittstellen
 
 # Laufzeitsicht
 
-## *\<Bezeichnung Laufzeitszenario 1>*
+## *Nutzer*
 
--   \<hier Laufzeitdiagramm oder Ablaufbeschreibung einfügen>
+![image](./diagramme/SequenzdiagrammNutzer.png)
 
--   \<hier Besonderheiten bei dem Zusammenspiel der Bausteine in diesem Szenario erläutern>
+## *Zitat*
 
-## *\<Bezeichnung Laufzeitszenario 2>*
+![image](./diagramme/SequenzdiagrammZitat.png)
 
-...
-
-## *\<Bezeichnung Laufzeitszenario n>*
-
-...
 
 # Verteilungssicht
 
@@ -232,16 +227,20 @@ Zuordnung von Bausteinen zu Infrastruktur
 • Observer Pattern: Dieses Muster erlaubt eine lose Kopplung zwischen Komponenten, was die Erweiterbarkeit und Wartbarkeit der Anwendung verbessert.
 # Qualitätsanforderungen
 
-::: formalpara-title
-**Weiterführende Informationen**
-:::
-
-Siehe [Qualitätsanforderungen](https://docs.arc42.org/section-10/) in der online-Dokumentation (auf Englisch!).
 
 ## Qualitätsbaum
 
+![image](./diagramme/qualitätsmerkmalBaum.png)
+
 ## Qualitätsszenarien
 
+- Wartbarkeit
+- Effizienz
+- Benutzbarkeit
+- Zuverlässigkeit
+- Sicherheit
+
+die jeweiligen Beschreibungen sind [hier](asr.md) zu finden
 # Risiken und technische Schulden
 
 # Glossar
