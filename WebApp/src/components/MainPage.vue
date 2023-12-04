@@ -1,4 +1,21 @@
 <script setup>
+    import html2canvas from 'html2canvas';
+
+    async function exportElementAsPNG(elementId) {
+        console.log("hat funktioniert");
+        const element = document.getElementById(elementId);
+
+        // HTML-Element in Canvas umwandeln
+        const canvas = await html2canvas(element);
+
+        // Canvas in PNG umwandeln
+        const image = canvas.toDataURL("image/png");
+
+        const link = document.createElement('a');
+        link.href = image;
+        link.download = 'exported-quote.png';
+        link.click();
+    }
 </script>
 <template>
     <div class="quoteBox">
@@ -17,7 +34,7 @@
                 </div>
             </div>
             <div id="quoteOfTheDayButtons" class="quoteButtons">
-                <button>Share</button>
+                <button v-on:click="() => exportElementAsPNG('quoteOfTheDay')">Share</button>
                 <button>Save</button>
             </div>
         </div>
@@ -51,7 +68,7 @@
                 </div>
             </div> 
             <div id="lastQuotesButton" class="quoteButtons">
-                <button v-on:click="test">View All</button>
+                <button>View All</button>
             </div>
         </div>
 </template>
