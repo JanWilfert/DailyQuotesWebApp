@@ -6,6 +6,7 @@ import ProfilePage from './components/ProfilePage.vue'
 import FriendsPage from './components/FriendsPage.vue'
 import SettingsPage from './components/SettingsPage.vue'
 import SignOutPage from './components/SignOutPage.vue'
+import LoginPage from './components/LoginPage.vue'
 import { ref } from 'vue'
 
 const currentComponent =  ref ("mainPage")
@@ -18,7 +19,8 @@ const components = {
   "profilePage": ProfilePage,
   "friendsPage": FriendsPage,
   "settingsPage": SettingsPage,
-  "signOutPage": SignOutPage
+  "signOutPage": SignOutPage,
+  "loginPage": LoginPage
 }
 
 function toggleDropDown (){
@@ -44,6 +46,7 @@ function onClickChild(value){
               <a v-on:click="toggleDropDown(), currentComponent = 'friendsPage'">Friends</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'settingsPage'">Settings</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'signOutPage'">Sign out</a>
+              <a v-on:click="toggleDropDown(), currentComponent = 'loginPage'">Login</a>
           </div>
       </div>
   </header>
