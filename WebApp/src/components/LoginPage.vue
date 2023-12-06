@@ -6,15 +6,25 @@
     <div class="userApplicationForm">
         <form action="/submit-your-login-form" method="post">
             <h1>Login</h1>
-            <div class="inputLoginData">
-                <!--<label for="username">E-Mail Adresse</label>-->
-                <input type="text" placeholder="E-Mail Adresse" id="username" class="userApplicationFormInput" name="username" required>
+            <div id="inputAndLinks">
+                <div class="inputLoginData">
+                    <input type="text" placeholder="E-Mail Adresse" id="mail" class="userApplicationFormInput"
+                        name="username" required>
+                </div>
+                <div class="inputLoginData">
+                    <input type="password" placeholder="Passwort" id="password" class="userApplicationFormInput"
+                        name="password" required>
+                </div>
+                <div class="loginFormLinks">
+                    <p id="forgotPassword">Passwort vergessen?</p>
+                    <p id="noAccount" v-on:click="$emit('goRegisterPage')">Noch kein Konto?</p>
+                </div>
             </div>
-            <div class="inputLoginData">
-                <!--<label for="password">Passwort</label>-->
-                <input type="password" placeholder="Passwort" id="password" class="userApplicationFormInput" name="password" required>
+
+            <div id="loginButtonDiv">
+                <button type="submit" id="loginButton">Anmelden</button>
             </div>
-            <button type="submit" id="loginButton">Anmelden</button>
+
         </form>
     </div>
 </template>

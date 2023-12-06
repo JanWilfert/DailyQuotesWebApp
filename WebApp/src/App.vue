@@ -7,6 +7,7 @@ import FriendsPage from './components/FriendsPage.vue'
 import SettingsPage from './components/SettingsPage.vue'
 import SignOutPage from './components/SignOutPage.vue'
 import LoginPage from './components/LoginPage.vue'
+import RegisterPage from './components/RegisterPage.vue'
 import { ref } from 'vue'
 
 const currentComponent =  ref ("mainPage")
@@ -20,7 +21,8 @@ const components = {
   "friendsPage": FriendsPage,
   "settingsPage": SettingsPage,
   "signOutPage": SignOutPage,
-  "loginPage": LoginPage
+  "loginPage": LoginPage,
+  "registerPage": RegisterPage
 }
 
 function toggleDropDown (){
@@ -30,7 +32,6 @@ function toggleDropDown (){
 function onClickChild(value){
   imgSrcProfile.value = URL.createObjectURL(value); 
 }
-
 </script>
 
 <template>
@@ -50,7 +51,7 @@ function onClickChild(value){
           </div>
       </div>
   </header>
-    <component :is="components[currentComponent]" @test="onClickChild"></component>
+  <component :is="components[currentComponent]" @showPic="onClickChild" @goRegisterPage="currentComponent='registerPage'"></component>
   </main>
 </template>
 
