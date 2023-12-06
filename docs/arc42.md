@@ -1,24 +1,9 @@
 # Einführung und Ziele
 
-<!--## Aufgabenstellung-->
+## Aufgabenstellung
 
 ## Qualitätsziele
-**Zuverlässigkeit:**  
-Die Android App soll eine sehr hohe Zuverlässigkeit und Verfügbarkeit haben. Diese Verfügbarkeit soll mindestens 99% betragen.
 
-**Effizienz:**  
-Tägliche und gespeicherte Zitate sollen sehr schnell (in unter 2 Sekunden) dem Nutzer angezeigt werden.
-
-**Sicherheit:**  
-Nutzerdaten sollen nicht verloren gehen beziehungsweise nicht von Dritten eingesehen werden können. Zudem sollen sensible Daten nicht im Klartext gespeichert werden, was jedoch von Firebase bereits [automatisch übernommen](https://cloud.google.com/firestore/docs/server-side-encryption) wird.
-
-**Benutzbarkeit:**  
-Die Benutzeroberfläche soll intuitiv sein. Der Nutzer soll einfach zu den gewünschten Bereichen navigieren können. Schlussendlich soll der Nutzer ohne das Studieren einer Anleitung die Android App sinnvoll und korrekt verwenden können.
-
-**Wartbarkeit:**  
-Der Code soll leicht zu verstehen sein. Die Android App soll in einzelne Komponenten untergliedert sein, sodass im Nachhinein einfach und schnell weitere Features hinzugefügt werden können.
-
-<!--
 ## Stakeholder
 
 |Rolle|Kontakt|Erwartungshaltung|
@@ -45,43 +30,82 @@ Der Code soll leicht zu verstehen sein. Die Android App soll in einzelne Kompone
 **\<Mapping fachliche auf technische Schnittstellen>**
 
 # Lösungsstrategie
--->
 
 # Bausteinsicht
 
 ## Whitebox Gesamtsystem
 
-***Übersichtsdiagramm***
+***\<Übersichtsdiagramm>***
 
-![Übersichtsdiagramm der Systemarchitektur](./diagramme/android_system-architecture.png)
+Begründung
 
-**Begründung:**
+:   *\<Erläuternder Text>*
 
-Die Architektur des "Daily Quotes" Systems ist darauf ausgelegt, eine direkte Verbindung zwischen der Android App und der Datenbank zu ermöglichen, ohne ein separates Backend.
+Enthaltene Bausteine
 
+:   *\<Beschreibung der enthaltenen Bausteine (Blackboxen)>*
 
-**Enthaltene Bausteine:**
+Wichtige Schnittstellen
 
-- **Frontend-App**:  
-Zuständig für die Präsentation der Benutzeroberfläche und die direkte Interaktion mit der Datenbank.
-- **Datenbank**:  
-Speichert Nutzerdaten und Zitate.
+:   *\<Beschreibung wichtiger Schnittstellen>*
 
-**Wichtige Schnittstellen:**
+### \<Name Blackbox 1>
 
-- **Datenbankschnittstelle**:  
-Direkte Kommunikation zwischen der App und der Datenbank.
+*\<Zweck/Verantwortung>*
 
-**Datenbank**
+*\<Schnittstelle(n)>*
 
-- **Zweck/Verantwortung**:  
-Speicherung und Verwaltung von Nutzerdaten und Zitaten.
-- **Schnittstellen**:  
-Direkte Kommunikation mit der Webapp.
-- **Qualitätsmerkmale**:  
-Datensicherheit, hohe Verfügbarkeit, schnelle Abfragezeiten.
+*\<(Optional) Qualitäts-/Leistungsmerkmale>*
 
+*\<(Optional) Ablageort/Datei(en)>*
 
+*\<(Optional) Erfüllte Anforderungen>*
+
+*\<(optional) Offene Punkte/Probleme/Risiken>*
+
+### \<Name Blackbox 2>
+
+*\<Blackbox-Template>*
+
+### \<Name Blackbox n>
+
+*\<Blackbox-Template>*
+
+### \<Name Schnittstelle 1>
+
+...
+
+### \<Name Schnittstelle m>
+
+## Ebene 2
+
+### Whitebox *\<Baustein 1>*
+
+*\<Whitebox-Template>*
+
+### Whitebox *\<Baustein 2>*
+
+*\<Whitebox-Template>*
+
+...
+
+### Whitebox *\<Baustein m>*
+
+*\<Whitebox-Template>*
+
+## Ebene 3
+
+### Whitebox \<\_Baustein x.1\_\>
+
+*\<Whitebox-Template>*
+
+### Whitebox \<\_Baustein x.2\_\>
+
+*\<Whitebox-Template>*
+
+### Whitebox \<\_Baustein y.1\_\>
+
+*\<Whitebox-Template>*
 
 # Laufzeitsicht
 
@@ -93,7 +117,7 @@ Datensicherheit, hohe Verfügbarkeit, schnelle Abfragezeiten.
 
 ![image](./diagramme/SequenzdiagrammZitat.png)
 
-<!--
+
 # Verteilungssicht
 
 ## Infrastruktur Ebene 1
@@ -143,50 +167,8 @@ Zuordnung von Bausteinen zu Infrastruktur
 ## *\<Konzept n>*
 
 *\<Erklärung>*
--->
 
 # Architekturentscheidungen
-## Zuverlässigkeit - Verfügbarkeit (Z1):
-**Architekturentscheidungen und Begründungen:**
-
-- **Einsatz von Cloud-basierten Services**: Die Nutzung von Cloud-Diensten ermöglicht eine hohe Skalierbarkeit und Zuverlässigkeit. Cloud-Anbieter bieten in der Regel garantierte Uptime-Prozentsätze und schnell skalierbare Infrastrukturen.
-
-**Entwurfsmuster und Begründungen:**
-
-- **Microservice-Architektur**: Die Aufteilung der Anwendung in Microservices ermöglicht eine unabhängige Skalierung und Wartung einzelner Dienste, was die Verfügbarkeit des Gesamtsystems verbessert.
-- **Health-Check-APIs**: Health-Check-APIs ermöglichen eine kontinuierliche Überwachung des Systemzustands und eine schnelle Reaktion auf Ausfälle, wodurch die Verfügbarkeit erhöht wird.
-
-## Effizienz - Performance bei der Anzeige von Zitaten (E1):
-**Architekturentscheidungen und Begründungen:**
-
-- **Optimierung der Datenbankstruktur**: Eine gut strukturierte und optimierte Datenbank verbessert die Performance bei Abfragen, besonders unter hoher Last.
-
-**Entwurfsmuster und Begründungen:**
-
-- **Data Loader**: Das Vorladen von Daten minimiert die Wartezeit für den Benutzer und verbessert das allgemeine Antwortverhalten der Anwendung.
-
-## Sicherheit - Datensicherheit (S1):
-**Architekturentscheidungen und Begründungen:**
-
-- **Regelmäßige Sicherheitsaudits und Penetrationstests**: Diese Maßnahmen sind wichtig, um Schwachstellen proaktiv zu identifizieren und zu beheben, bevor sie ausgenutzt werden können.
-
-## Benutzbarkeit - Bedienbarkeit (B1):
-**Architekturentscheidungen und Begründungen:**
-- **Responsive Design**: Dies gewährleistet, dass die Anwendung auf verschiedenen Geräten funktioniert und eine konsistente Benutzererfahrung bietet.
-- **Benutzerzentriertes Design**: Durch Fokus auf den Benutzer kann die Anwendung intuitiver und benutzerfreundlicher gestaltet werden.
-
-**Entwurfsmuster und Begründungen:**
-
-- **Model-View-Controller (MVC)**: Die Trennung von Daten, Benutzeroberfläche und Logik verbessert die Wartbarkeit und erleichtert die Entwicklung einer benutzerfreundlichen Oberfläche.
-
-## Wartbarkeit - Erweiterbarkeit (W1):
-**Architekturentscheidungen und Begründungen:**
-
-- **Modulare Codebasis**: Eine modulare Struktur erleichtert die Wartung und Erweiterung der Anwendung, da Änderungen in einem Modul weniger Auswirkungen auf andere Module haben.
-
-**Entwurfsmuster und Begründungen:**
-
-- **Observer Pattern**: Dieses Muster erlaubt eine lose Kopplung zwischen Komponenten, was die Erweiterbarkeit und Wartbarkeit der Anwendung verbessert.
 
 # Qualitätsanforderungen
 
@@ -204,15 +186,11 @@ Zuordnung von Bausteinen zu Infrastruktur
 - Sicherheit
 
 die jeweiligen Beschreibungen sind [hier](asr.md) zu finden
+# Risiken und technische Schulden
 
-
-<!--# Risiken und technische Schulden-->
-
-<!--
 # Glossar
 
 |Begriff|Definition|
 |---|---|
 |*\<Begriff-1>*|*\<Definition-1>*|
 |*\<Begriff-2*|*\<Definition-2>*|
--->
