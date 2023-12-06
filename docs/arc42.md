@@ -43,77 +43,31 @@
 
 ## Whitebox Gesamtsystem
 
-***\<Übersichtsdiagramm>***
+***Übersichtsdiagramm***
 
-Begründung
+![Übersichtsdiagramm der Systemarchitektur](./diagramme/Systemarchitektur.png)
 
-:   *\<Erläuternder Text>*
+**Begründung:**
 
-Enthaltene Bausteine
+Die Architektur des "Daily Quotes" Systems ist darauf ausgelegt, eine direkte Verbindung zwischen der Webapp und der Datenbank zu ermöglichen, ohne ein separates Backend. Vue.js ermöglicht dabei eine reaktive und benutzerfreundliche Frontend-Erfahrung, während die Datenbank die nötige Speicherung und Verwaltung der Daten übernimmt.
 
-:   *\<Beschreibung der enthaltenen Bausteine (Blackboxen)>*
 
-Wichtige Schnittstellen
+**Enthaltene Bausteine:**
 
-:   *\<Beschreibung wichtiger Schnittstellen>*
+- **Frontend-Webapp (Vue.js)**: Zuständig für die Präsentation der Benutzeroberfläche und die direkte Interaktion mit der Datenbank.
+- **Datenbank**: Speichert Nutzerdaten und Zitate.
 
-### \<Name Blackbox 1>
+**Wichtige Schnittstellen:**
 
-*\<Zweck/Verantwortung>*
+- **Datenbankschnittstelle**: Direkte Kommunikation zwischen der Webapp und der Datenbank.
 
-*\<Schnittstelle(n)>*
+**Datenbank**
 
-*\<(Optional) Qualitäts-/Leistungsmerkmale>*
+- **Zweck/Verantwortung**: Speicherung und Verwaltung von Nutzerdaten und Zitaten.
+- **Schnittstellen**: Direkte Kommunikation mit der Webapp.
+- **Qualitätsmerkmale**: Datensicherheit, hohe Verfügbarkeit, schnelle Abfragezeiten.
 
-*\<(Optional) Ablageort/Datei(en)>*
 
-*\<(Optional) Erfüllte Anforderungen>*
-
-*\<(optional) Offene Punkte/Probleme/Risiken>*
-
-### \<Name Blackbox 2>
-
-*\<Blackbox-Template>*
-
-### \<Name Blackbox n>
-
-*\<Blackbox-Template>*
-
-### \<Name Schnittstelle 1>
-
-...
-
-### \<Name Schnittstelle m>
-
-## Ebene 2
-
-### Whitebox *\<Baustein 1>*
-
-*\<Whitebox-Template>*
-
-### Whitebox *\<Baustein 2>*
-
-*\<Whitebox-Template>*
-
-...
-
-### Whitebox *\<Baustein m>*
-
-*\<Whitebox-Template>*
-
-## Ebene 3
-
-### Whitebox \<\_Baustein x.1\_\>
-
-*\<Whitebox-Template>*
-
-### Whitebox \<\_Baustein x.2\_\>
-
-*\<Whitebox-Template>*
-
-### Whitebox \<\_Baustein y.1\_\>
-
-*\<Whitebox-Template>*
 
 # Laufzeitsicht
 
