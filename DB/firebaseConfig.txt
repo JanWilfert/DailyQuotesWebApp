@@ -1,0 +1,9 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyDy38EsiC4HemvWr8LfhOcfnh54YXS-1_o",
+  authDomain: "dailyquotes-1ae0d.firebaseapp.com",
+  projectId: "dailyquotes-1ae0d",
+  storageBucket: "dailyquotes-1ae0d.appspot.com",
+  messagingSenderId: "172597832140",
+  appId: "1:172597832140:web:8b0853b2096fdd080b1569",
+  measurementId: "G-W9TLJBR85K"
+};
