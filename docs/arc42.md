@@ -1,7 +1,5 @@
 # Einführung und Ziele
 
-## Aufgabenstellung
-
 ## Qualitätsziele
 **Zuverlässigkeit:** Die Webapp soll eine sehr hohe Zuverlässigkeit und Verfügbarkeit haben. Diese Verfügbarkeit soll mindestens 99% betragen.
 
@@ -14,30 +12,32 @@
 **Wartbarkeit:** Der Code soll innerhalb von 1.30h verstanden werden können. Die Webapp soll in einzelne Komponenten unterglieder sein, sodass im Nachhinein einfach und schnell weitere Features hinzugefügt werden können.
 ## Stakeholder
 
-|Rolle|Kontakt|Erwartungshaltung|
-|---|---|---|
-|*\<Rolle-1>*|*\<Kontakt-1>*|*\<Erwartung-1>*|
-|*\<Rolle-2>*|*\<Kontakt-2>*|*\<Erwartung-2>*|
-
-# Randbedingungen
-
-# Kontextabgrenzung
-
-## Fachlicher Kontext
-
-**\<Diagramm und/oder Tabelle>**
-
-**\<optional: Erläuterung der externen fachlichen Schnittstellen>**
-
 ## Technischer Kontext
 
-**\<Diagramm oder Tabelle>**
+**Frontend-Webapp (Vue.js) zu Datenbank:**
 
-**\<optional: Erläuterung der externen technischen Schnittstellen>**
+- **Kanal:** Direkte Datenbankabfragen über eine API (Datenbank mit Firebase)
 
-**\<Mapping fachliche auf technische Schnittstellen>**
+- **Übertragungsmedium:** Internet
 
-# Lösungsstrategie
+
+**Benutzeranmeldung und Registrierung:**
+
+- **Fachliche Eingabe:** Benutzername, Passwort
+
+- **Technische Schnittstelle:** Direkte Abfrage an die Datenbank
+
+**Zitate anzeigen:**
+
+- **Fachliche Ausgabe:** Zitat des Tages, Zitate-Sammlung
+
+- **Technische Schnittstelle:** Abfragen aus der Datenbank 
+
+**Speichern/Teilen von Zitaten:**
+
+- **Fachliche Eingabe:** Auswahl und Aktionen bezüglich Zitaten
+
+- **Technische Schnittstelle:** Speichern und Aktualisieren von Daten in der Datenbank
 
 # Bausteinsicht
 
