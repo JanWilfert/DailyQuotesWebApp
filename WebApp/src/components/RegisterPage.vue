@@ -2,14 +2,15 @@
 import { ref } from 'vue';
 import { register } from '../userAuth/auth.js';
 
+
 const username = ref('');
 const email = ref('');
 const password = ref('');
 
 async function handleRegister() {
   try {
-    const user = await register(email.value, password.value);
-    alert(username.value + " erfolgreich registriert");
+    const user = await register(email.value, password.value, username.value);
+    alert(user.email + " erfolgreich registriert");
   } catch (error) {
     alert(error.message);
   }
