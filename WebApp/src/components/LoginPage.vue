@@ -1,33 +1,44 @@
 <script setup>
+import { ref } from 'vue';
+import { login } from '../userAuth/auth.js';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
+const email = ref('');
+const password = ref('');
+
+async function handleLogin() {
+  try {
+    const user = await login(email.value, password.value);
+    alert(email.value + " erfolgreich angemeldet");
+  } catch (error) {
+    alert(error.message);
+  }
+}
 </script>
 
 <template>
-    <div class="userApplicationForm">
-        <form action="/submit-your-login-form" method="post">
-            <h1>Login</h1>
-            <div id="inputAndLinks">
-                <div class="inputLoginData">
-                    <input type="text" placeholder="E-Mail Adresse" id="mail" class="userApplicationFormInput"
-                        name="username" required>
-                </div>
-                <div class="inputLoginData">
-                    <input type="password" placeholder="Passwort" id="password" class="userApplicationFormInput"
-                        name="password" required>
-                </div>
-                <div class="loginFormLinks">
-                    <p id="forgotPassword">Passwort vergessen?</p>
-                    <p id="noAccount" v-on:click="$emit('goRegisterPage')">Noch kein Konto?</p>
-                </div>
-            </div>
-
-            <div id="loginButtonDiv">
-                <button type="submit" id="loginButton">Anmelden</button>
-            </div>
-
-        </form>
-    </div>
+  <div class="userApplicationForm">
+    <form @submit.prevent="handleLogin">
+      <h1>Login</h1>
+      <div id="inputAndLinks">
+        <div class="inputLoginData">
+          <input v-model="email" type="email" placeholder="E-Mail Adresse" id="mail" class="userApplicationFormInput" required>
+        </div>
+        <div class="inputLoginData">
+          <input v-model="password" type="password" placeholder="Passwort" id="password" class="userApplicationFormInput" required>
+        </div>
+        <div class="loginFormLinks">
+          <p id="forgotPassword">Passwort vergessen?</p>
+          <p id="noAccount" @click="$emit('goRegisterPage')">Noch kein Konto?</p>
+        </div>
+      </div>
+      <div id="loginButtonDiv">
+        <button type="button" id="loginButton" @click="handleLogin()">Anmelden</button>
+      </div>
+    </form>
+  </div>
 </template>
+
 <!--
 <style>
 /* Hauptcontainer für das Formular */
