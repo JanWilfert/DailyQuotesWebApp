@@ -1,3 +1,12 @@
+<script setup>
+import { useUser } from '../userAuth/userStore.js';
+
+const { currentUser } = useUser();
+</script>
+
 <template>
-    <h1>Das ist dein Profil</h1>
+  <div>
+    <p v-if="currentUser">Angemeldet als: {{currentUser.email }}</p>
+    <p v-else>Nicht angemeldet</p>
+  </div>
 </template>
