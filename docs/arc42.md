@@ -82,53 +82,7 @@ Die Architektur des "Daily Quotes" Systems ist darauf ausgelegt, eine direkte Ve
 
 # Verteilungssicht
 
-## Infrastruktur Ebene 1
-
-***\<Übersichtsdiagramm>***
-
-Begründung
-
-:   *\<Erläuternder Text>*
-
-Qualitäts- und/oder Leistungsmerkmale
-
-:   *\<Erläuternder Text>*
-
-Zuordnung von Bausteinen zu Infrastruktur
-
-:   *\<Beschreibung der Zuordnung>*
-
-## Infrastruktur Ebene 2
-
-### *\<Infrastrukturelement 1>*
-
-*\<Diagramm + Erläuterungen>*
-
-### *\<Infrastrukturelement 2>*
-
-*\<Diagramm + Erläuterungen>*
-
-...
-
-### *\<Infrastrukturelement n>*
-
-*\<Diagramm + Erläuterungen>*
-
-# Querschnittliche Konzepte
-
-## *\<Konzept 1>*
-
-*\<Erklärung>*
-
-## *\<Konzept 2>*
-
-*\<Erklärung>*
-
-...
-
-## *\<Konzept n>*
-
-*\<Erklärung>*
+Um die DailyQuotes Webapp starten zu können, muss nur die lokale Vue Applikation gestartet werden. Diese läuft dann auf dem eigenen PC. Im Hintergrund läuft die Authentifizierung über eine Verbindung zu Firebase.
 
 # Architekturentscheidungen
 ## Zuverlässigkeit - Verfügbarkeit (Z1):
