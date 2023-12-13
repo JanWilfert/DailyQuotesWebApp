@@ -67,14 +67,14 @@ _Bislang keine vorhanden_
 
 **UI-Mockup:**
 
-![UiMockup](./img/UiMockup.png)
+![UiMockup](./img/mockups/UiMockup.png)
 
 ### 2.2 Anzeigen des täglichen Zitats
 
 **Relevante User-Stories:**
 
 - Der User soll sich jeden Tag neue Zitate anzeigen lassen können, damit er einen erfüllteren Tag habe 
-![QuoteOfTheDay](./img/QuoteOfTheDay.png)
+![QuoteOfTheDay](./img/mockups/QuoteOfTheDay.png)
 
 **Voraussetzung:**
 
@@ -120,7 +120,7 @@ _Bislang keine vorhanden_
    
 **UI-Mockup:**
 
-![Register](./img/QuoteOfTheDay.png)
+![Register](./img/mockups/QuoteOfTheDay.png)
 
 **Voraussetzung:**
 
@@ -144,7 +144,7 @@ Nachbedingung:
 
 **UI-Mockup:**
 
-![Register](./img/Register.png)
+![Register](./img/mockups/Register.png)
 
 **Voraussetzung:**
 
@@ -170,7 +170,7 @@ Nachbedingung:
 
 **UI-Mockup:**
 
-![Profile](./img/Profile.png) ![ResetPassword](./img/ResetPassword.png)
+![Profile](./img/mockups/Profile.png) ![ResetPassword](./img/mockups/ResetPassword.png)
 
 **Voraussetzung:**
 
@@ -194,7 +194,7 @@ Nachbedingung:
 
 **UI-Mockup:**
 
-![Register](./img/Profile.png)
+![Register](./img/mockups/Profile.png)
 
 **Voraussetzung:**
 
@@ -218,7 +218,7 @@ Nachbedingung:
 
 **UI-Mockup:**
 
-![ResetPassword](./img/ResetPassword.png)
+![ResetPassword](./img/mockups/ResetPassword.png)
 
 **Voraussetzung:**
 
@@ -242,7 +242,7 @@ Nachbedingung:
 
 **UI-Mockup:**
 
-![Profile](./img/Profile.png)
+![Profile](./img/mockups/Profile.png)
 
 **Voraussetzung:**
 
