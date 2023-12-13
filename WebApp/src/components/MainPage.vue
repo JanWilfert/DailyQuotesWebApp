@@ -20,7 +20,7 @@
 <template>
     <div class="quoteBox">
             <h1>Quote of the Day!</h1>
-            <div class="quote">
+            <div id="quoteOfTheDay" class="quote">
                 <div id="quoteText">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
                     et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 

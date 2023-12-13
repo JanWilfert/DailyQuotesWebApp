@@ -9,6 +9,7 @@ import SignOutPage from './components/SignOutPage.vue'
 import LoginPage from './components/LoginPage.vue'
 import RegisterPage from './components/RegisterPage.vue'
 import { ref } from 'vue'
+import { logout } from './userAuth/auth.js';
 
 const currentComponent =  ref ("mainPage")
 const showDropDown = ref (false)
@@ -32,6 +33,14 @@ function toggleDropDown (){
 function onClickChild(value){
   imgSrcProfile.value = URL.createObjectURL(value); 
 }
+
+async function handleLogout(){
+  try {
+    await logout();
+  } catch (error) {
+    alert("Fehler beim Ausloggen: " + error.message);
+  }
+}
 </script>
 
 <template>
@@ -46,7 +55,7 @@ function onClickChild(value){
               <a v-on:click="toggleDropDown(), currentComponent = 'profilePage'">Profile</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'friendsPage'">Friends</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'settingsPage'">Settings</a>
-              <a v-on:click="toggleDropDown(), currentComponent = 'signOutPage'">Sign out</a>
+              <a v-on:click="toggleDropDown(), handleLogout() ,currentComponent = 'signOutPage'">Sign out</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'loginPage'">Login</a>
           </div>
       </div>

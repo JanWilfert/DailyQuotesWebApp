@@ -1,3 +1,12 @@
+<script setup>
+import { useUser } from '../userAuth/userStore.js';
+
+const { userProfile } = useUser();
+</script>
+
 <template>
-    <h1>Das ist dein Profil</h1>
+  <div>
+    <p v-if="userProfile">Angemeldet als: {{userProfile.username }}</p>
+    <p v-else>Nicht angemeldet</p>
+  </div>
 </template>
