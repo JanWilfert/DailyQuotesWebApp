@@ -3,6 +3,10 @@
 
 Der Name unseres Projekts lautet „Daily Quotes"
 
+**Projektvision:**
+
+Die Daily Quotes App soll eine Plattform für tägliche Inspiration werden. Sie soll ein breites Publikum ansprechen und zu einem integrierten Teil des täglichen Lebens des Benutzers werden. Die (Web)App soll intiutiv bedienbar sein und für die Nutzer eine Quelle der Motivation sein.
+
 **Softwareanforderungen:**
 
 - Der User soll sich einen Account erstellen können, damit er von verschiedenen Geräten aus auf seine Daten zugreifen kann.
@@ -264,10 +268,13 @@ Nachbedingung:
 - <u>Zuverlässigkeit:</u> Die Webapp und Android-App sollen funktionsfähig sein und höchstens einmal pro Monat nicht erreichbar sein (aufgrund von Bugs oder Updates)
 - <u>Leistung:</u> Die "Daily Quotes" App muss in der Lage sein, eine hohe Leistung zu bieten, um ein optimales Benutzererlebnis zu gewährleisten. Dies beinhaltet die schnelle und reibungslose Anzeige von täglichen Zitaten, ohne spürbare Verzögerungen oder Latenz. Die App sollte auch unter Last, beispielsweise bei einer großen Anzahl gleichzeitiger Benutzer, effizient funktionieren.
 - <u>Effizienz:</u> Die Effizienz der App ist entscheidend für die Benutzerzufriedenheit und die Ressourcennutzung. "Daily Quotes" sollte so optimiert sein, dass sie minimale Server- und Client-Ressourcen verbraucht, um eine schnelle Reaktionszeit und ein flüssiges Benutzererlebnis zu gewährleisten. Die App sollte auch in der Lage sein, Ressourcen dynamisch zuzuweisen und freizugeben, um die Effizienz zu maximieren und Ressourcenverschwendung zu minimieren.
+Tägliche und gespeicherte Zitate sollen sehr schnell (in unter 2 Sekunden) dem Nutzer angezeigt werden.
 - <u>Integrität:</u> Die Integrität der Daten und der Benutzerinformationen ist von höchster Bedeutung. "Daily Quotes" muss sicherstellen, dass die Zitate und Benutzerdaten zu jeder Zeit genau, konsistent und sicher sind. Dies beinhaltet den Schutz vor unbefugtem Zugriff, Datenverlust und -korruption. Mechanismen zur Datensicherung und -wiederherstellung sollten implementiert sein, um die Integrität der Daten auch im Falle eines Systemausfalls oder Sicherheitsvorfalls zu gewährleisten.
 - <u>Wartbarkeit:</u> Die Wartbarkeit der "Daily Quotes" App ist entscheidend für ihre langfristige Zuverlässigkeit und Effizienz. Der Code sollte klar, gut dokumentiert und modular sein, um die Wartung zu erleichtern. Updates, Fehlerbehebungen und Verbesserungen sollten einfach implementiert werden können, ohne die vorhandene Funktionalität oder das Benutzererlebnis zu beeinträchtigen.
+Der Code soll innerhalb von 1.30h verstanden werden können. Die Webapp soll in einzelne Komponenten unterglieder sein, sodass im Nachhinein einfach und schnell weitere Features hinzugefügt werden können.
 - <u>Erweiterbarkeit:</u> Die App sollte so konzipiert sein, dass sie leicht erweitert und skaliert werden kann, um neue Funktionen und Kapazitäten hinzuzufügen. Dies erfordert eine flexible Architektur und die Fähigkeit, neue Module oder Komponenten nahtlos zu integrieren, ohne die bestehende Struktur und Funktionalität zu stören.
-- <u>Sicherheit:</u> Die Nutzerdaten wie z.B. die E-Mail Adresse sollen sicher sein und nicht von außenstehenden Personen einsehbar sein.
+- <u>Sicherheit:</u> Die Nutzerdaten wie z.B. die E-Mail Adresse sollen sicher sein und nicht von außenstehenden Personen einsehbar sein. Nutzerdaten sollen nicht verloren gehen beziehungsweise nicht von Dritten eingesehen werden können. Zudem sollen sensible Daten nicht im Klartext gespeichert werden, sondern nur mit Salt und gehasht.
+- <u>Zuverlässigkeit:</u> Die Webapp soll eine sehr hohe Zuverlässigkeit und Verfügbarkeit haben. Diese Verfügbarkeit soll mindestens 99% betragen.
 
 _Bemerkung: User-Stories beschreiben bei uns eher die funktionalen Anforderungen_
 
