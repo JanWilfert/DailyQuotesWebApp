@@ -5,7 +5,7 @@
 <template>
     <div class="userApplicationForm">
         <form action="/submit-your-login-form" method="post">
-            <h1>Login</h1>
+            <h1>Registrierung</h1>
             <div class="inputLoginData">
                 <input type="text" placeholder="Name" id="usernameregister" class="userApplicationFormInput" name="username" required>
             </div>
