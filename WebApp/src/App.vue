@@ -3,7 +3,6 @@
 import TheWelcome from './components/TheWelcome.vue'
 import MainPage from './components/MainPage.vue'
 import ProfilePage from './components/ProfilePage.vue'
-import FriendsPage from './components/FriendsPage.vue'
 import SettingsPage from './components/SettingsPage.vue'
 import SignOutPage from './components/SignOutPage.vue'
 import LoginPage from './components/LoginPage.vue'
@@ -19,7 +18,6 @@ const imgSrcLogo = "./src/assets/DailyQuotes_Logo.png"
 const components = {
   "mainPage": MainPage,
   "profilePage": ProfilePage,
-  "friendsPage": FriendsPage,
   "settingsPage": SettingsPage,
   "signOutPage": SignOutPage,
   "loginPage": LoginPage,
@@ -53,7 +51,6 @@ async function handleLogout(){
           <img v-on:click="toggleDropDown" :src="imgSrcProfile">
           <div id="dropDownMenu" v-if="showDropDown">
               <a v-on:click="toggleDropDown(), currentComponent = 'profilePage'">Profile</a>
-              <a v-on:click="toggleDropDown(), currentComponent = 'friendsPage'">Friends</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'settingsPage'">Settings</a>
               <a v-on:click="toggleDropDown(), handleLogout() ,currentComponent = 'signOutPage'">Sign out</a>
               <a v-on:click="toggleDropDown(), currentComponent = 'loginPage'">Login</a>
