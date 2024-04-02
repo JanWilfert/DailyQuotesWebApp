@@ -19,7 +19,7 @@ async function handleRegister() {
 
 <template>
   <div class="userApplicationForm">
-    <form @submit.prevent="handleRegister">
+    <form @submit.prevent="handleRegister" >
       <h1>Registrieren</h1>
       <div class="inputLoginData">
         <input v-model="username" type="text" placeholder="Name" id="usernameregister" class="userApplicationFormInput" required>
