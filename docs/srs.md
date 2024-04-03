@@ -77,7 +77,7 @@ _Bislang keine vorhanden_
 
 **Relevante User-Stories:**
 
-- Der User soll sich jeden Tag neue Zitate anzeigen lassen können, damit er einen erfüllteren Tag habe 
+- Der User soll sich jeden Tag ein neues Zitat anzeigen lassen können, damit er einen erfüllteren Tag habe 
 ![QuoteOfTheDay](./img/mockups/QuoteOfTheDay.png)
 
 **Voraussetzung:**
