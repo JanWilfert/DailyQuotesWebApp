@@ -6,13 +6,13 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 const email = ref('');
 const password = ref('');
 
-async function handleLogin() {
-  try {
+async function handleLogin() { 
+    try {
     const user = await login(email.value, password.value);
     alert(email.value + " erfolgreich angemeldet");
   } catch (error) {
     alert(error.message);
-  }
+  } 
 }
 </script>
 
