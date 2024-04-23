@@ -6,7 +6,7 @@ const { userProfile } = useUser();
 
 <template>
   <div>
-    <p v-if="userProfile">Angemeldet als: {{userProfile.username }}</p>
-    <p v-else>Nicht angemeldet</p>
+    <p v-if="userProfile">Signed in as: {{ userProfile.username }}</p>
+    <p v-else>Not signed in</p>
   </div>
 </template>

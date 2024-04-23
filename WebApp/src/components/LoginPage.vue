@@ -28,12 +28,12 @@ async function handleLogin() {
           <input v-model="password" type="password" placeholder="Passwort" id="password" class="userApplicationFormInput" required>
         </div>
         <div class="loginFormLinks">
-          <p id="forgotPassword">Passwort vergessen?</p>
-          <p id="noAccount" @click="$emit('goRegisterPage')">Noch kein Konto?</p>
+          <p id="forgotPassword">Forgot password?</p>
+          <p id="noAccount" @click="$emit('goRegisterPage')">Sign up</p>
         </div>
       </div>
       <div id="loginButtonDiv">
-        <button type="button" id="loginButton" @click="handleLogin()">Anmelden</button>
+        <button type="button" id="loginButton" @click="handleLogin()">Sign in</button>
       </div>
     </form>
   </div>

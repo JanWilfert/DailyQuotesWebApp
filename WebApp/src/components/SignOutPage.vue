@@ -1,3 +1,3 @@
 <template>
-    <h1>Ausgeloggt</h1>
+    <h1>Signed out</h1>
 </template>
