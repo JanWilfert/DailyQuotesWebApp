@@ -28,7 +28,7 @@ async function handleRegister() {
         <input v-model="email" type="email" placeholder="E-Mail Adresse" id="mailRegister" class="userApplicationFormInput" required>
       </div>
       <div class="inputLoginData">
-        <input v-model="password" type="pupsword" placeholder="Passwort" id="passwordRegister" class="userApplicationFormInput" required>
+        <input v-model="password" type="password" placeholder="Passwort" id="passwordRegister" class="userApplicationFormInput" required>
       </div>
       <div id="loginButtonDiv">
         <button type="button" id="loginButton" @click="handleRegister()">Sign up</button>
