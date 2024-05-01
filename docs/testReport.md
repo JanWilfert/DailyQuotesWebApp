@@ -2,6 +2,10 @@
 
 Da wir eine ziemlich einfach Infrastruktur haben, gab es nicht viel zu testen. Daher haben wir uns dafür entscheiden, UI Komponente zu testen.
 
+EDIT:  
+Um Verwirrung zu vermeiden hier eine kleine Erklärung, was wir mit *nicht testbar* meinen.  
+Wir haben *nicht* bzw. *schwierig testbar* geschrieben, da der simple Code unserer Codebase direkt in die UI Komponenten integriert ist. Somit wäre zum seperaten Testen des Codes ein größeres Refactoring notwendig, was sich bei simplem Code nicht lohnt. Hätten wir komplexe Methoden oder anderweitig komplexen Code, würden wir selbstverständlich die UI von dem Code trennen (View und ViewModel Strategie) und den Code seperat mit Unit-Tests testen.
+
 ## Testumgebung (Teststrategie)
 
 Die Android App wurde in Android Studio geschrieben und zur Entwicklung der UI wurde Jetpack Compose verwendet.
@@ -109,11 +113,11 @@ Da wir keine Fehler gefunden haben, mussten auch keine behoben werden.
 
 #### Erreichte Testabdeckung
 
-DIe erreiche Testabdeckung ist ziemlich gering, da das schreiben von UI Elementen mit Hilfe von Jetpack Compose ziemlich intuitiv ist und die Tests selten aussagekräftig waren. Ein fehlgeschlagener Test lag immer an einem Fehler in der Konstruktion des Testes, nicht an einem Fehler im Code. Um weitere Irritationen zu vermeiden, haben wir darauf verzichtet, eine große Testabdeckung anzustreben.
+Die erreiche Testabdeckung ist ziemlich gering, da das Schreiben von UI Elementen mit Hilfe von Jetpack Compose ziemlich intuitiv ist und die Tests selten aussagekräftig waren. Ein fehlgeschlagener Test lag immer an einem Fehler in der Konstruktion des Testes, nicht an einem Fehler im Code. Um weitere Irritationen zu vermeiden, haben wir darauf verzichtet, eine große Testabdeckung anzustreben.
 
 ## Empfehlungen
 
-Da unser Code nicht wirklich testbar ist, lassen sich schwer Empfehlungen und Schlussfolgerungen aus diesen Tests schließen. Wir werden die Möglichkeit des Testens in unser Repertoire aufnehmen und verwenden, sollten wir auf ein komplexes Problem stoßen.  
+Da unser Code nicht wirklich testbar ist (siehe oben), lassen sich schwer Empfehlungen und Schlussfolgerungen aus diesen Tests schließen. Wir werden die Möglichkeit des Testens in unser Repertoire aufnehmen und verwenden, sollten wir auf ein komplexes Problem stoßen.  
 Da unser Code aber simpel und schwierig zu testen ist, zusätzlich das Schreiben von Tests deutlich mehr Arbeit ist, als der daraus entstandne Nutzen rechtfertigt, werden wir weiterhin das Meiste per Hand überprüfen und nur bei äußerst komplexen Konstruktionen automatisiert testen.
 
 ## Schlussfolgerungen
