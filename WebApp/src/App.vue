@@ -51,7 +51,7 @@ async function handleLogout(){
           <img v-on:click="currentComponent='mainPage'" :src="imgSrcLogo">
       </div>
       <div style="margin-left:auto"> 
-        <span> {{ userProfile.username }} </span>
+        <span> {{ userProfile?.username }} </span>
       </div>
       <div class="profile" >
           <img v-on:click="toggleDropDown" :src="imgSrcProfile">

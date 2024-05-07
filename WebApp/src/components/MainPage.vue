@@ -67,7 +67,7 @@
         </div>
     </div>
         
-    <div id="lastQuotes" class="quoteBox">
+    <div v-if="lastQuotes?.length > 0" id="lastQuotes" class="quoteBox">
         <h1>Last Quotes</h1>
         <div v-if="isLoading">Loading...</div>
         <div v-else v-for="(quote, index) in (showAllQuotes ? lastQuotes : lastQuotes.slice(0, 2))" :key="index" class="quote">
