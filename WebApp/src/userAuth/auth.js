@@ -12,9 +12,11 @@ const register = async (email, password, username) => {
 
     const userDocRef = doc(db, "users", user.uid);
     await setDoc(userDocRef, {
-    username: username,
-    email: email,
-  });
+      username: username,
+      email: email,
+      favorites: [],
+      lastQuotes: ["08Sc72y24TvkjOHVggch", "04b5DpH3jS0NVS7NFUsE", "3TUosYR8KQHMFgS2Lz06", "3iJrf3FxhJaajUuwvZ7z"],
+    });
     return user;
   } catch (error) {
     throw new Error(error.message);

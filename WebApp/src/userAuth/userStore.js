@@ -8,6 +8,11 @@ const userProfile = ref(null);
 const auth = getAuth();
 const db = getFirestore();
 
+let resolveUserPromise;
+const userLoaded = new Promise(resolve => {
+  resolveUserPromise = resolve;
+});
+
 const unsubscribe = onAuthStateChanged(auth, async (user) => {
   currentUser.value = user;
   if (user) {
@@ -21,10 +26,11 @@ const unsubscribe = onAuthStateChanged(auth, async (user) => {
   } else {
     userProfile.value = null;
   }
+  resolveUserPromise();
 });
 
 onUnmounted(() => unsubscribe());
 
 export function useUser() {
-  return { currentUser, userProfile };
+  return { currentUser, userProfile, userLoaded };
 }

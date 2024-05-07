@@ -9,6 +9,9 @@ import LoginPage from './components/LoginPage.vue'
 import RegisterPage from './components/RegisterPage.vue'
 import { ref } from 'vue'
 import { logout } from './userAuth/auth.js';
+import { useUser } from './userAuth/userStore.js';
+
+const { userProfile } = useUser();
 
 const currentComponent =  ref ("mainPage")
 const showDropDown = ref (false)
@@ -46,6 +49,9 @@ async function handleLogout(){
     <header>
       <div class="logo">
           <img v-on:click="currentComponent='mainPage'" :src="imgSrcLogo">
+      </div>
+      <div style="margin-left:auto"> 
+        <span> {{ userProfile.username }} </span>
       </div>
       <div class="profile" >
           <img v-on:click="toggleDropDown" :src="imgSrcProfile">
