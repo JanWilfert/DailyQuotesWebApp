@@ -3,19 +3,19 @@ import { getFirestore, collection, getDocs, query, where, doc, getDoc } from "fi
 
 const db = getFirestore();
 
-const getQuotes = async (quoteIds) => {
+const getQuotes = async (quoteObjects) => {
     const quotesCollection = collection(db, 'quotes');
 
-    const quotePromises = quoteIds.map(id => {
-        const quoteDoc = doc(quotesCollection, id);
-        return getDoc(quoteDoc);
+    const quotePromises = quoteObjects.map(quoteObject => {
+        const quoteDoc = doc(quotesCollection, quoteObject.id);
+        return getDoc(quoteDoc).then(docSnapshot => ({
+            ...docSnapshot.data(),
+            id: docSnapshot.id,
+            date: quoteObject.date
+        }));
     });
 
-    const quoteSnapshots = await Promise.all(quotePromises);
-
-    const quotes = quoteSnapshots
-        .filter(quoteSnapshot => quoteSnapshot.exists())
-        .map(quoteSnapshot => ({ id: quoteSnapshot.id, ...quoteSnapshot.data() }));
+    const quotes = await Promise.all(quotePromises);
 
     return quotes;
 }

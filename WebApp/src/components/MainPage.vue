@@ -16,6 +16,7 @@
             return;
         }
         lastQuotes.value = await getQuotes(userProfile.value.lastQuotes);
+        console.log("last quotes", lastQuotes.value)
         isLoading.value = false;
     });
 
@@ -57,9 +58,6 @@
                 sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
                 takimata sanctus est Lorem ipsum dolor sit amet.
             </div>
-            <div id="quoteAuthor">
-                ~Max Mustermann
-            </div>
         </div>
         <div id="quoteOfTheDayButtons" class="quoteButtons">
             <button v-on:click="() => exportElementAsPNG('quoteOfTheDay')">Share</button>
@@ -74,8 +72,8 @@
             <div :id="`lastQuote${index}Text`" class="quoteText">
                 {{ quote.quote }}
             </div>
-            <div :id="`lastQuote${index}Author`" class="author">
-                ~author
+            <div :id="`lastQuote${index}date`" class="date">
+                {{ quote.date.toDate().toLocaleDateString('de-DE') }}
             </div>
         </div>
         <div id="lastQuotesButton" class="quoteButtons">

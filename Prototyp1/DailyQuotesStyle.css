@@ -110,7 +110,7 @@ button:hover{
     margin: 10px;
 }
 
-.author{
+.date{
     display: flex;
     justify-content: right;
     font-size: 10px;

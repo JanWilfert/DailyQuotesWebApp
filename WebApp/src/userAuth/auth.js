@@ -15,7 +15,24 @@ const register = async (email, password, username) => {
       username: username,
       email: email,
       favorites: [],
-      lastQuotes: ["08Sc72y24TvkjOHVggch", "04b5DpH3jS0NVS7NFUsE", "3TUosYR8KQHMFgS2Lz06", "3iJrf3FxhJaajUuwvZ7z"],
+      lastQuotes: [
+        { 
+          id: "08Sc72y24TvkjOHVggch",
+          date: new Date(new Date().setDate(new Date().getDate()-0))
+        },
+        {
+          id: "04b5DpH3jS0NVS7NFUsE",
+          date: new Date(new Date().setDate(new Date().getDate()-1))
+        },
+        { 
+          id: "3TUosYR8KQHMFgS2Lz06",
+          date: new Date(new Date().setDate(new Date().getDate()-2))
+        },
+        { 
+          id: "3iJrf3FxhJaajUuwvZ7z",
+          date: new Date(new Date().setDate(new Date().getDate()-3))
+        }
+      ]
     });
     return user;
   } catch (error) {
