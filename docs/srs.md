@@ -94,7 +94,7 @@ _Bislang keine vorhanden_
 
 **Nachbedingung:**
 
-- System zeigt das aktuelle Zitat, samt dem Autor
+- System zeigt das aktuelle Zitat
 
 ### 02.3 Speicherung eines Zitates
 
@@ -131,7 +131,6 @@ _Bislang keine vorhanden_
 
 - Punkt 2.2: Anzeigen des täglichen Zitates
 - Klickbaren Button zum Teilen des Zitates
-- Verbindung zu Messenger
 
 Aufwand:
 
@@ -154,10 +153,9 @@ Nachbedingung:
 **Voraussetzung:**
 
 - Anmeldeseite
-- Anmeldesystem
-- Hashen des Passworts
-- Datenbank zum Speichern der Daten
-- Verbindung zur Datenbank
+- Anmeldesystem (Firebase Authentifikation)
+- Datenbank zum Speichern der Daten (Firebase Firestore)
+- Verbindung zur Datenbank (Firebase Firestore)
 
 **Aufwand:**
 
