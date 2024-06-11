@@ -45,6 +45,7 @@ _Bislang keine vorhanden_
 
 ### 1.4 Referenzen
 - [Jira](https://daily-quotes.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog)
+- [Android App Repo](https://github.com/Emil-96/dailyquotes_android)
 
 ## 2. Funktionale Anforderungen**
 
