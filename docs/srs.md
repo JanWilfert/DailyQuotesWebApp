@@ -10,7 +10,7 @@ Die Daily Quotes App soll eine Plattform für tägliche Inspiration werden. Sie 
 **Softwareanforderungen:**
 
 - Der User soll sich einen Account erstellen können, damit er von verschiedenen Geräten aus auf seine Daten zugreifen kann.
-- Der User soll sich jeden Tag neue Zitate anzeigen lassen können, damit er einen erfüllteren Tag habe
+- Der User soll sich jeden Tag ein neues Zitat anzeigen lassen können, damit er einen erfüllteren Tag habe
 - Der User soll Zitate speichern können, damit er diese auch im Nachhinein noch anschauen kann.
 - Der User soll sein Passwort zurücksetzen können, damit sein Account nicht verloren geht, wenn er sein Passwort vergisst.
 - Der User soll Zitate mit anderen Nutzern teilen können, damit ein Austausch stattfindet.
