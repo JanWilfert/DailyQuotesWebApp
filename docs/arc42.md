@@ -86,33 +86,21 @@ Um die DailyQuotes Webapp starten zu können, muss nur die lokale Vue Applikatio
 
 # Architekturentscheidungen
 ## Zuverlässigkeit - Verfügbarkeit (Z1):
-**Architekturentscheidungen und Begründungen:**
 
 • Einsatz von Cloud-basierten Services: Die Nutzung von Cloud-Diensten ermöglicht eine hohe Skalierbarkeit und Zuverlässigkeit. Cloud-Anbieter bieten in der Regel garantierte Uptime-Prozentsätze und schnell skalierbare Infrastrukturen.
-
-**Entwurfsmuster und Begründungen:**
-
 • Microservice-Architektur: Die Aufteilung der Anwendung in Microservices ermöglicht eine unabhängige Skalierung und Wartung einzelner Dienste, was die Verfügbarkeit des Gesamtsystems verbessert.
-• Health-Check-APIs: Health-Check-APIs ermöglichen eine kontinuierliche Überwachung des Systemzustands und eine schnelle Reaktion auf Ausfälle, wodurch die Verfügbarkeit erhöht wird.
+<br>-> Wir benutzen Firebase für die Authentifizierung, das Speichern der Profilbilder und als Datenbank für Nutzerdaten und Zitate. Firebase bietet kostenlose und zuverlässige Skalierbarkeit, weswegen wir uns für Googles Firebase entschieden haben.
 
 ## Effizienz - Performance bei der Anzeige von Zitaten (E1):
-**Architekturentscheidungen und Begründungen:**
 
 • Optimierung der Datenbankstruktur: Eine gut strukturierte und optimierte Datenbank verbessert die Performance bei Abfragen, besonders unter hoher Last.
-
-**Entwurfsmuster und Begründungen:**
-
+<br>-> Firebase Firestore ist eine NO SQL Datenbank. Google bietet dabei eine gute Struktur der Daten, wodurch es zu guter Performance bei Abfragen kommt. 
 • Data Loader: Das Vorladen von Daten minimiert die Wartezeit für den Benutzer und verbessert das allgemeine Antwortverhalten der Anwendung.
+<br>-> Nur bei der Android App werden die Daten aus der Datenbank auch lokal abgespeichert.
 
 ## Sicherheit - Datensicherheit (S1):
-**Architekturentscheidungen und Begründungen:**
 
-• Implementierung von TLS/SSL: Die Verwendung von Verschlüsselung für die Datenübertragung ist entscheidend, um die Datenintegrität und -sicherheit zu gewährleisten.
-• Regelmäßige Sicherheitsaudits und Penetrationstests: Diese Maßnahmen sind wichtig, um Schwachstellen proaktiv zu identifizieren und zu beheben, bevor sie ausgenutzt werden können.
-
-**Entwurfsmuster und Begründungen:**
-
-• Secure Hash Algorithm (SHA) mit Salt für Passwörter: Diese Methode bietet eine robuste Lösung zur sicheren Speicherung von Passwörtern, wodurch die Sicherheit von Benutzerkonten erhöht wird.
+• Durch die Benutzung von Firebase Authentifikation, gewährleisten wir eine verschlüsselte Übertragung und sichere Überprüfung/Speicherung der Nutzerdaten
 
 ## Benutzbarkeit - Bedienbarkeit (B1):
 **Architekturentscheidungen und Begründungen:**
@@ -128,11 +116,6 @@ Um die DailyQuotes Webapp starten zu können, muss nur die lokale Vue Applikatio
 
 • Modulare Codebasis: Eine modulare Struktur erleichtert die Wartung und Erweiterung der Anwendung, da Änderungen in einem Modul weniger Auswirkungen auf andere Module haben.
 
-• Verwendung von Design Patterns: Design Patterns bieten bewährte Lösungen für häufig auftretende Probleme, was die Wartbarkeit und Erweiterbarkeit verbessert.
-
-**Entwurfsmuster und Begründungen:**
-
-• Observer Pattern: Dieses Muster erlaubt eine lose Kopplung zwischen Komponenten, was die Erweiterbarkeit und Wartbarkeit der Anwendung verbessert.
 # Qualitätsanforderungen
 
 
