@@ -134,6 +134,8 @@ Um die DailyQuotes Webapp starten zu können, muss nur die lokale Vue Applikatio
 die jeweiligen Beschreibungen sind [hier](asr.md) zu finden
 # Risiken und technische Schulden
 
+Unsere Risiken sind in der [RMMM](RMMM.xlsx) Liste zu finden.
+
 # Glossar
 
 |Begriff|Definition|
