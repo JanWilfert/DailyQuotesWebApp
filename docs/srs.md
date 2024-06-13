@@ -96,7 +96,7 @@ _Bislang keine vorhanden_
 
 - System zeigt das aktuelle Zitat
 
-### 02.3 Speicherung eines Zitates
+### 2.3 Speicherung eines Zitates
 
 **Relevante User Stories:**
 
