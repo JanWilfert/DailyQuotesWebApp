@@ -47,7 +47,7 @@ _Bislang keine vorhanden_
 - [Jira](https://daily-quotes.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog)
 - [Android App Repo](https://github.com/Emil-96/dailyquotes_android)
 
-## 2. Funktionale Anforderungen**
+## 2. Funktionale Anforderungen
 
 - <u>Tägliche Zitat-Anzeige:</u> Die Webapp sollte jeden Tag automatisch ein neues Zitat anzeigen.
 - <u>Zitat-Speicherfunktion:</u> Nutzer sollten in der Lage sein, Zitate in ihrem persönlichen Profil zu speichern.
