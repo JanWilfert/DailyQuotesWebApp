@@ -1,0 +1,32 @@
+name: Lint Code Base
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  run-lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./WebApp
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          
+          fetch-depth: 0
+          cache-dependency-path: './WebApp/package-lock.json'
+
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_HTML: true
+          VALIDATE_JAVASCRIPT: true
+          VALIDATE_JSON: true
+          VALIDATE_CSS: true
+          DEFAULT_BRANCH: "main"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
