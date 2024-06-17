@@ -90,6 +90,7 @@ Um die DailyQuotes Webapp starten zu können, muss nur die lokale Vue Applikatio
 • Einsatz von Cloud-basierten Services: Die Nutzung von Cloud-Diensten ermöglicht eine hohe Skalierbarkeit und Zuverlässigkeit. Cloud-Anbieter bieten in der Regel garantierte Uptime-Prozentsätze und schnell skalierbare Infrastrukturen.
 • Microservice-Architektur: Die Aufteilung der Anwendung in Microservices ermöglicht eine unabhängige Skalierung und Wartung einzelner Dienste, was die Verfügbarkeit des Gesamtsystems verbessert.
 <br>-> Wir benutzen Firebase für die Authentifizierung, das Speichern der Profilbilder und als Datenbank für Nutzerdaten und Zitate. Firebase bietet kostenlose und zuverlässige Skalierbarkeit, weswegen wir uns für Googles Firebase entschieden haben.
+<br>-> Zudem wollen wir die Funktion der Android-App auch bei einem temporären Ausfall der Datenbank sicherstellen. Dies kann durch eine offline Synchronisation der Datenbank gescheehen. Dafür haben wir eine Methode geschrieben, welche die Zitate-Datenbank kopiert und lokal auf dem Smartphone speicher. Dadurch können dem Nutzer, auch bei einem temporären Ausfall der Datenbank, Zitate angezeigt werden.
 
 ## Effizienz - Performance bei der Anzeige von Zitaten (E1):
 
