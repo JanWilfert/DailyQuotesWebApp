@@ -95,7 +95,7 @@ Um die DailyQuotes Webapp starten zu können, muss nur die lokale Vue Applikatio
 ## Effizienz - Performance bei der Anzeige von Zitaten (E1):
 
 • Optimierung der Datenbankstruktur: Eine gut strukturierte und optimierte Datenbank verbessert die Performance bei Abfragen, besonders unter hoher Last.
-<br>-> Firebase Firestore ist eine NO SQL Datenbank. Google bietet dabei eine gute Struktur der Daten, wodurch es zu guter Performance bei Abfragen kommt. 
+<br>-> Firebase Firestore ist eine NO SQL Datenbank. Google bietet dabei eine gute Struktur der Daten, wodurch es zu guter Performance bei Abfragen kommt.<br> 
 • Data Loader: Das Vorladen von Daten minimiert die Wartezeit für den Benutzer und verbessert das allgemeine Antwortverhalten der Anwendung.
 <br>-> Nur bei der Android App werden die Daten aus der Datenbank auch lokal abgespeichert.
 
