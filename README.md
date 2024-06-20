@@ -2,16 +2,6 @@
 
 The code for the Android app is in a seperate repository [here](https://github.com/Emil-96/dailyquotes_android).
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration 
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
 ## change directory
 
 ```sh
@@ -35,3 +25,19 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+## Dokumente
+
+[Projekt-Handout](./docs/HandoutDailyQuotes.pdf)
+<br>[Präsentation](./docs/AbschlussPräsentationDailyQuotes.pdf)
+<br>[Demo-Video]() COMMING SOON
+<br>[Software-Anforderungsspezifikation](./docs/srs.md)
+<br>[Software-Architektur-Dokument](./docs/arc42.md)
+<br>[Clean Code Zusammenfassung](https://github.com/JanWilfert/DailyQuotesWebApp/discussions/1#discussioncomment-9197679)
+<br>[Review-Protokoll](https://github.com/JanWilfert/DailyQuotesWebApp/discussions/1#discussioncomment-9736883)
+<br>[Testbericht](https://github.com/JanWilfert/DailyQuotesWebApp/discussions/1#discussioncomment-9277948)
+<br>[Metriken](./docs/metriken.md)
+<br>[CI/CD](https://github.com/JanWilfert/DailyQuotesWebApp/discussions/1#discussioncomment-9660206)
+<br>[RMMM](./docs/RMMM.xlsx)
+<br>[Android App Repo](https://github.com/Emil-96/dailyquotes_android)
