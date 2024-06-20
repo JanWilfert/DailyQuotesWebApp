@@ -31,7 +31,7 @@ npm run build
 
 [Projekt-Handout](./docs/HandoutDailyQuotes.pdf)
 <br>[Präsentation](./docs/AbschlussPräsentationDailyQuotes.pdf)
-<br>[Demo-Video]() COMMING SOON
+<br>[Demo-Video](./docs/live_demo/se_live_demo.mp4)
 <br>[Software-Anforderungsspezifikation](./docs/srs.md)
 <br>[Software-Architektur-Dokument](./docs/arc42.md)
 <br>[Clean Code Zusammenfassung](https://github.com/JanWilfert/DailyQuotesWebApp/discussions/1#discussioncomment-9197679)
